@@ -25,6 +25,19 @@
 <p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
 Brief report background</p>
 
+<h2>Presentation</h2>
+
+<h2>Development Split</h2>
+
+|Artifact|Person(s) Responsible|Artifact Status|Notes|Date Completed|
+|---|---|---|---|---|
+|~~_**GitHub Documentation**_~~|Michael McLain|&check; (complete)|_Extra Information_|_**25/04/22**_|
+|_**Design Report**_|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**HTML**_| Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**CSS**_|Michael McLain, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**PHP**_|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**MySQL Scripting**_|William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
