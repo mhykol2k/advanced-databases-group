@@ -10,6 +10,8 @@
 
 <h5 align="center">Due: 16th May 2022</h5>
 
+[Assignment Brief](https://rb.gy/u1qb6f)
+
 
 <h2>Implementation</h2>
 
