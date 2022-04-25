@@ -1,0 +1,25 @@
+{
+  "name": "advanced-databases-group",
+  "version": "1.0.0",
+  "description": "project for university.",
+  "main": "index.php",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm1089/advanced-databases-group.git"
+  },
+  "author": "Michael McLain, William Castleman and Jure Sunic.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mm1089/advanced-databases-group/issues"
+  },
+  "homepage": "https://github.com/mm1089/advanced-databases-group#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
