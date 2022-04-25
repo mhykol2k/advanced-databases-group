@@ -1,0 +1,20 @@
+CREATE schema assignment
+
+CREATE TABLE 
+assignment.EMP(
+    EMPNO bigserial not null primary key,
+    ENAME varchar(255) not null,
+    JOB varchar(255) not null,
+    MGR bigserial,
+    HIREDATE date not null,
+    SAL money not null,
+    COMM money,
+    DEPTNO big serial not null references assignment.EMP(DEPTNO)
+);
+
+CREATE TABLE 
+assignment.DEPT(
+    DEPTNO bigserial not null primary key,
+    DNAME varchar(255) not null,
+    LOC varchar(255) not null,
+);
