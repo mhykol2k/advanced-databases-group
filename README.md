@@ -24,11 +24,12 @@
 7. [Reflection](#reflection)
 8. [Conclusion](#conclusion)
 9. [Mark Rubric](#rubric)
-
-
+  
 </details>
 
-<details>
+<br>
+
+<details open>
 <summary>Assignment Information</summary>
 <br>
 
@@ -38,6 +39,7 @@
 
 <a>Presentation Download:</a> [Here](https://youtube.com/)
 </details>
+<br>
 
 ## Implementation
 <p>Something to do with how we created this...</p>
