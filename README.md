@@ -1,21 +1,24 @@
 <div id=top></div>
 <h1 align="center"> Advanced Databases and Big Data </h1>
-<h1 align="center">Assignment 2: PHP MySQL Implementation</h1>
-<br>
-<h3 align="center">Michael McLain, William Castleman and Jure Sunic</h3>
+<h3 align="center">Assignment 2: PHP MySQL Implementation</h3>
+<h4 align="center">Michael McLain, William Castleman and Jure Sunic</h4>
 <h5 align="center">Software Engineering, Computer Science</h5>
 <h6 align="center">Canterbury Christ Church University,</h6>
-<h6 align="center">Canterbury, CT1 1PL, England.</h6>
 
 <h5 align="center">Module Leaders: Amina Souag</h5>
 
 <h5 align="center">Due: 16th May 2022</h5>
 
-<a>Brief Download</a> [Here](https://rb.gy/u1qb6f)
+<br>
+
+<h3>Useful Resources</h3>
+
+<a>Assignment Brief Download:</a> [Here](https://rb.gy/u1qb6f)
 
 <a>GitHub Project Link: [Here](https://github.com/mm1089/advanced-databases-group)</a>
 
 <a>Presentation Download:</a> [Here](https://youtube.com/)
+
 
 <h2>Implementation</h2>
 
