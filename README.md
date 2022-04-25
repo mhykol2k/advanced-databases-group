@@ -45,7 +45,7 @@ Brief report background</p>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <h2>Database preparation (front-end)</h2>
-<p>For the creation of the front-end we... </p>
+<p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
