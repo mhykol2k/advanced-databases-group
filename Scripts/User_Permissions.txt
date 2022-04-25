@@ -1,0 +1,18 @@
+/// Admin
+GRANT ALL on assignment.EMP TO 'admin';
+GRANT ALL on assignment.DEPT TO 'admin';
+
+/// Normal users
+// employee table
+GRANT SELECT ON assignment.EMP TO 'default_user';
+GRANT UPDATE ON assignment.EMP TO 'default_user';
+GRANT INSERT ON assignment.EMP TO 'default_user';
+GRANT DELETE ON assignment.EMP TO 'default_user';
+GRANT SHOW DATABASES ON assignment.EMP TO 'default_user';
+
+// department table
+GRANT SELECT ON assignment.DEPT TO 'default_user';
+GRANT UPDATE ON assignment.DEPT TO 'default_user';
+GRANT INSERT ON assignment.DEPT TO 'default_user';
+GRANT DELETE ON assignment.DEPT TO 'default_user';
+GRANT SHOW DATABASES ON assignment.DEPT TO 'default_user';
