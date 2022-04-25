@@ -1,3 +1,4 @@
+<div id=top></div>
 <h1 align="center"> Advanced Databases and Big Data </h1>
 <h1 align="center">Assignment 2: PHP MySQL Implementation</h1>
 <br>
@@ -24,23 +25,43 @@
 <p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
 Brief report background</p>
 
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <h2>Database preparation (front-end)</h2>
 <p>For the creation of the front-end we... </p>
 
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <h2>Database preparation (back-end)</h2>
 <p>When creating the back-end we... </p>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
   
 <h2>Results</h2>
 <p>After completeing this assignment we were able to find... similarities, differences...
+  
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <h2>Reflection</h2>
 <p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?</p>
 
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <h3>Conclusion</h3>
 <p>In summation, we were able to deduce...<p>
+  
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
   
 <h2>Appendicies: </h2>
 
 <h3>MARKING SCHEME</h3>
 
 ![image](https://user-images.githubusercontent.com/72493335/165140305-b4b4d3bb-fadd-4e0d-b3a8-fd7ac8b84182.png)
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
