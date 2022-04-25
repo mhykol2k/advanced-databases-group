@@ -10,8 +10,11 @@
 
 <h5 align="center">Due: 16th May 2022</h5>
 
-[Assignment Brief](https://rb.gy/u1qb6f)
+<a>Brief Download</a> [Here](https://rb.gy/u1qb6f)
 
+<a>GitHub Project Link: [Here](https://github.com/mm1089/advanced-databases-group)</a>
+
+<a>Presentation Download:</a> [Here](https://youtube.com/)
 
 <h2>Implementation</h2>
 
@@ -35,11 +38,9 @@ Brief report background</p>
 
 <h3>Conclusion</h3>
 <p>In summation, we were able to deduce...<p>
+  
+<h2>Appendicies: </h2>
 
-<h3>Appendix: </h3>
+<h3>MARKING SCHEME</h3>
 
-![image](https://user-images.githubusercontent.com/72493335/165107932-967a3ee3-bc41-43db-9ce0-39a887bb5060.png)
-
-<a>GitHub Project Link: https://github.com/mm1089/advanced-databases-group</a>
-
-<p>Presentation Download: </p>
+![image](https://user-images.githubusercontent.com/72493335/165140305-b4b4d3bb-fadd-4e0d-b3a8-fd7ac8b84182.png)
