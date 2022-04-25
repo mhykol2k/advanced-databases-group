@@ -1,11 +1,11 @@
 <div id=top></div>
+<h5 align="left">Michael McLain, William Castleman and Jure Sunic</h5>
 <h1 align="center"> Advanced Databases and Big Data </h1>
 <h3 align="center">Assignment 2: PHP MySQL Implementation</h3>
-<h4 align="center">Michael McLain, William Castleman and Jure Sunic</h4>
 <h5 align="center">Software Engineering, Computer Science</h5>
 <h6 align="center">Canterbury Christ Church University,</h6>
 
-<h5 align="center">Module Leaders: Amina Souag</h5>
+<h5 align="center">Module Leaders: Dr Amina Souag</h5>
 
 <h5 align="center">Due: 16th May 2022</h5>
 
