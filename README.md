@@ -1,21 +1,24 @@
 <div id=top></div>
 <h1 align="center"> Advanced Databases and Big Data </h1>
-<h1 align="center">Assignment 2: PHP MySQL Implementation</h1>
-<br>
-<h3 align="center">Michael McLain, William Castleman and Jure Sunic</h3>
+<h3 align="center">Assignment 2: PHP MySQL Implementation</h3>
+<h4 align="center">Michael McLain, William Castleman and Jure Sunic</h4>
 <h5 align="center">Software Engineering, Computer Science</h5>
 <h6 align="center">Canterbury Christ Church University,</h6>
-<h6 align="center">Canterbury, CT1 1PL, England.</h6>
 
 <h5 align="center">Module Leaders: Amina Souag</h5>
 
 <h5 align="center">Due: 16th May 2022</h5>
 
-<a>Brief Download</a> [Here](https://rb.gy/u1qb6f)
+<br>
+
+<h3>Useful Resources</h3>
+
+<a>Assignment Brief Download:</a> [Here](https://rb.gy/u1qb6f)
 
 <a>GitHub Project Link: [Here](https://github.com/mm1089/advanced-databases-group)</a>
 
 <a>Presentation Download:</a> [Here](https://youtube.com/)
+
 
 <h2>Implementation</h2>
 
@@ -25,11 +28,24 @@
 <p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
 Brief report background</p>
 
+<h2>Presentation</h2>
+
+<h2>Development Split</h2>
+
+|Artifact|Person(s) Responsible|Artifact Status|Notes|Date Completed|
+|---|---|---|---|---|
+|~~_**GitHub Documentation**_~~|Michael McLain|&check; (complete)|_Extra Information_|_**25/04/22**_|
+|_**Design Report**_|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**HTML**_| Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**CSS**_|Michael McLain, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**PHP**_|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|_**MySQL Scripting**_|William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <h2>Database preparation (front-end)</h2>
-<p>For the creation of the front-end we... </p>
+<p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
