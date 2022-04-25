@@ -18,12 +18,13 @@
 1. [Implementation](#implementation)
 2. [Presentation](#presentation)
 3. [Development](#development)
-4. [Preparation](#preparation)
-5. [Results](#results)
-6. [Reflection](#reflection)
-7. [Conclusion](#conclusion)
-8. [Mark Rubric](#rubric)
-9. [Appendices](#appendices)
+4. [Issues](#issues)
+5. [Preparation](#preparation)
+6. [Results](#results)
+7. [Reflection](#reflection)
+8. [Conclusion](#conclusion)
+9. [Mark Rubric](#rubric)
+
 
 </details>
 
@@ -64,6 +65,9 @@ Brief report background</p>
 
 GitHub issues are tracked [Here](https://github.com/mm1089/advanced-databases-group/issues)
 
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Preparation
 <p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.</p>
 
@@ -87,8 +91,6 @@ GitHub issues are tracked [Here](https://github.com/mm1089/advanced-databases-gr
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
-  
-### Appendices
 
 ### Rubric
 
