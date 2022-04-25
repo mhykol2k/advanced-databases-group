@@ -11,26 +11,45 @@
 
 <br>
 
-<h3>Useful Resources</h3>
+<details open>
+<summary>Table of Contents</summary>
+<br>
+  
+1. [Implementation](#implementation)
+2. [Presentation](#presentation)
+3. [Development](#development)
+4. [Preparation](#preparation)
+5. [Results](#results)
+6. [Reflection](#reflection)
+7. [Conclusion](#conclusion)
+8. [Mark Rubric](#rubric)
+9. [Appendices](#appendices)
+
+</details>
+
+<details>
+<summary>Assignment Information</summary>
+<br>
 
 <a>Assignment Brief Download:</a> [Here](https://rb.gy/u1qb6f)
 
 <a>GitHub Project Link: [Here](https://github.com/mm1089/advanced-databases-group)</a>
 
 <a>Presentation Download:</a> [Here](https://youtube.com/)
+</details>
 
 
-<h2>Implementation</h2>
 
 
-<h2>Presentation</h2>
+## Implementation
+<p>Something to do with how we created this...</p>
+
+## Presentation
 
 <p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
 Brief report background</p>
 
-<h2>Presentation</h2>
-
-<h2>Development Split</h2>
+## Development
 
 |Artifact|Person(s) Responsible|Artifact Status|Notes|Date Completed|
 |---|---|---|---|---|
@@ -44,38 +63,33 @@ Brief report background</p>
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h2>Database preparation (front-end)</h2>
+## Preparation
 <p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<h2>Database preparation (back-end)</h2>
-<p>When creating the back-end we... </p>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
   
-<h2>Results</h2>
+## Results
 <p>After completeing this assignment we were able to find... similarities, differences...
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h2>Reflection</h2>
+## Reflection
 <p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h3>Conclusion</h3>
+## Conclusion
 <p>In summation, we were able to deduce...<p>
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
   
-<h2>Appendicies: </h2>
+### Appendices
 
-<h3>MARKING SCHEME</h3>
+### Rubric
 
 ![image](https://user-images.githubusercontent.com/72493335/165140305-b4b4d3bb-fadd-4e0d-b3a8-fd7ac8b84182.png)
 
