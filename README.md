@@ -38,9 +38,6 @@
 <a>Presentation Download:</a> [Here](https://youtube.com/)
 </details>
 
-
-
-
 ## Implementation
 <p>Something to do with how we created this...</p>
 
@@ -62,6 +59,10 @@ Brief report background</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Issues
+
+GitHub issues are tracked [Here](https://github.com/mm1089/advanced-databases-group/issues)
 
 ## Preparation
 <p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.</p>
