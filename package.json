@@ -20,6 +20,5 @@
   },
   "homepage": "https://github.com/mm1089/advanced-databases-group#readme",
   "dependencies": {
-    "tailwindcss": "^3.0.24"
   }
 }
