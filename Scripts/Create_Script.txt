@@ -1,19 +1,20 @@
+CREATE SCHEMA assignment;
 
 CREATE TABLE 
-EMP(
+assignment.EMP(
     EMPNO int NOT NULL,
     ENAME varchar(255) NOT NULL,
     JOB varchar(255) NOT NULL,
-    MGR bigserial,
+    MGR int,
     HIREDATE date NOT NULL,
-    SAL money NOT NULL,
-    COMM money,
+    SAL decimal(5,2) NOT NULL,
+    COMM decimal(5,2),
     DEPTNO int NOT NULL references assignment.EMP(DEPTNO),
     CONSTRAINT EMP_PK PRIMARY KEY (EMPNO)
 );
 
 CREATE TABLE 
-DEPT(
+assignment.DEPT(
     DEPTNO int NOT NULL,
     DNAME varchar(255) NOT NULL,
     LOC varchar(255) NOT NULL,
