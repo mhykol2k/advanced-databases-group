@@ -16,7 +16,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(151, 151, 151);
+  background-color: rgb(154, 154, 154);
   overflow-x: hidden;
 }
 
@@ -31,8 +31,8 @@ body {
 
 /* Change color on hover */
 .sidenav a:hover {
-  background-color: #f7f7f7;
-  color: black;
+  background-color: darkgray;
+  color: whitesmoke;
 }
 
 /* Style the content */
