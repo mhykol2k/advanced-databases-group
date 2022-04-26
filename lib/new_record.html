@@ -6,6 +6,13 @@
         <link rel="icon" href="../media/globe-icon.png">
     </head>
 
+<script>
+    function addRecord() {
+        alert("Record succesfully added!");
+    }
+</script>
+    
+
 <!-- Main Section for Implementation -->
 <!-- Information on assignment etc. -->
     <main>
@@ -19,6 +26,19 @@
         <div class="content">
             <h1>Create new Record</h1>
             <h5>Users will create new records here</h5>
+        </div>
+
+        <div class="content">
+            <form>
+                <br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="last_name" name="first_name" placeholder="Last Name">
+                <br>
+              </form>
+              <br>
+              <button onclick="addRecord()" type="submit">Add New Record</button>
         </div>
 
 <!-- End of Body -->
