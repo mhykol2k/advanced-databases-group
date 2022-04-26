@@ -27,15 +27,33 @@
             <h1>Create new Record</h1>
             <h5>Users will create new records here</h5>
         </div>
-
+<!-- EMP (EMPNO, ENAME, JOB, MGR#, HIREDATE, SAL, COMM, DEPTNO#) -->
         <div class="content">
-            <form>
+            <form class="form">
                 <br>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="last_name" name="first_name" placeholder="Last Name">
-                <br>
+                <label class="form" for="EMPNO">EMPNO:</label>
+                <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number">
+
+                <label class="form" for="ENAME">ENAME:</label>
+                <input class="form" type="text" id="ENAME" name="ENAME" placeholder="Employee Name">
+
+                <label class="form" for="JOB">JOB:</label>
+                <input class="form" type="text" id="JOB" name="JOB" placeholder="Job">
+
+                <label class="form" for="MANAGER">MANAGER:</label>
+                <input class="form" type="text" id="MANAGER" name="MANAGER" placeholder="Manager">
+
+                <label class="form" for="HIREDATE">HIREDATE:</label>
+                <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy">
+
+                <label class="form" for="SAL">SALARY:</label>
+                <input class="form" type="number" id="SAL" name="SAL" placeholder="Salary">
+
+                <label class="form" for="COMM">COMMISION:</label>
+                <input class="form" type="number" id="COMM" name="COMM" placeholder="Commision">
+
+                <label class="form" for="DEPTNO">DEPTNO:</label>
+                <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number">
               </form>
               <br>
               <button onclick="addRecord()" type="submit">Add New Record</button>
