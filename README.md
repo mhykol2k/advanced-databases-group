@@ -93,6 +93,8 @@ be available on GitHub and as a PDF.
 GitHub features Issues, which can be defined as a lightweight issue-tracking system available for all GitHub repositories. The ideology is that users will
 consistently use it as your project evolves. In most cases, GitHub Issues is used for reporting bugs and requesting features.
 The project issues are tracked: [Here](https://github.com/mm1089/advanced-databases-group/issues)
+<img width="1107" alt="image" src="https://user-images.githubusercontent.com/72493335/165314933-0d09fc61-b3d2-415d-8ac4-e393ffbc3cad.png">
+
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
