@@ -16,7 +16,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(154, 154, 154);
+  background: #042331;
   overflow-x: hidden;
 }
 
@@ -27,19 +27,23 @@ body {
   text-decoration: none;
   display: block;
   font-weight: 600;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  
 }
 
 /* Change color on hover */
 .sidenav a:hover {
   background-color: darkgray;
   color: whitesmoke;
+  padding-left: 25px;
 }
 
 /* Style the content */
 .content {
   margin-left: 200px;
   padding-left: 20px;
-  padding-bottom: 15px;
   color: black;
   text-align: center;
   border-bottom: 2px solid rgb(151, 151, 151);
