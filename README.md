@@ -58,6 +58,17 @@ function placeholder action ({placeholder}) {
 }
 ```
 
+# Project Architecture
+
+.
+├── assets
+├── lib
+├── media
+├── scripts
+├── README.md
+├── Report.pdf
+└── .gitignore
+
 ## Presentation
 
 <p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
