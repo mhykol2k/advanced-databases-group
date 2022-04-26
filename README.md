@@ -44,9 +44,12 @@
 ## Implementation
 <p>Something to do with how we created this...</p>
 
-# Prerequisites
+### Prerequisites
 
-<p>To run this code you will need to ensure that...</p>
+<p>To run this implementation you will need to ensure that you have XXXX installed</p>
+
+1. MySQL
+2. Browser
 
 ```sh
 function placeholder action ({placeholder}) {
