@@ -44,6 +44,17 @@
 ## Implementation
 <p>Something to do with how we created this...</p>
 
+# Prerequisites
+
+<p>To run this code you will need to ensure that...</p>
+
+```sh
+function placeholder action ({placeholder}) {
+  const something_else
+  var another_thing
+}
+```
+
 ## Presentation
 
 <p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
