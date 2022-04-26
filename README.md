@@ -99,6 +99,14 @@ GitHub issues are tracked [Here](https://github.com/mm1089/advanced-databases-gr
 ## Reflection
 <p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?</p>
 
+Designers must consider SQL when your data is highly structured and doesn't change frequently.
+
+For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
+|SQL|NoSQL|Conclusion|
+|---|---|---|
+|Data is highly structured|Data is mostly unstructured/doesn't change frequently|Something useful|
+|||
+
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
