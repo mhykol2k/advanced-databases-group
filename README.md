@@ -15,15 +15,16 @@
 <summary>Table of Contents</summary>
 <br>
   
-1. [Implementation](#implementation)
-2. [Presentation](#presentation)
-3. [Development](#development)
-4. [Issues](#issues)
-5. [Preparation](#preparation)
-6. [Results](#results)
-7. [Reflection](#reflection)
-8. [Conclusion](#conclusion)
-9. [Mark Rubric](#rubric)
+- [Implementation](#implementation)
+  - [Prerequisites](#prerequisites)
+- [Presentation](#presentation)
+- [Development](#development)
+- [Issues](#issues)
+- [Preparation](#preparation)
+- [Results](#results)
+- [Reflection](#reflection)
+- [Conclusion](#conclusion)
+  - [Rubric](#rubric)
   
 </details>
 
@@ -42,6 +43,10 @@
 <br>
 
 ## Implementation
+<p>show how to in php:
+connect to db
+edit db
+display results</p>
 <p>Something to do with how we created this...</p>
 
 ### Prerequisites
@@ -122,3 +127,5 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
