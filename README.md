@@ -147,4 +147,35 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Appendices 
+
+<h3>db_config_script.sql</h3>
+<p>A script that creates...</p>
+
+```sql
+CREATE TABLE 
+assignment.DEPT(
+    DEPTNO int NOT NULL,
+    DNAME varchar(255) NOT NULL,
+    LOC varchar(255) NOT NULL,
+    CONSTRAINT DEPT_PK PRIMARY KEY (DEPTNO)
+);
+```
+<h3>db_config_script.sql</h3>
+<p>A script that populates the tables...</p>
+
+```sql
+INSERT INTO assignment.DEPT (DEPTNO, DNAME, LOC)
+VALUES
+('10', 'ACCOUNTING', 'NEW-YORK'),
+('20', 'RESEARCH', 'DALLAS'),
+('30', 'SALES', 'CHICAGO'),
+('40', 'OPERATIONS', 'BOSTON');
+```
+
+<p>This section of the report is for code snippets, images or any other relevant information that is not store in the markdown.</p>
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
