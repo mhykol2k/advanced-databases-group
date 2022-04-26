@@ -69,8 +69,10 @@ function placeholder action ({placeholder}) {
 
 ## Presentation
 
-<p>In the video you talk about the database preparation(backend), technique: including connection to the database and queries (frontend), results(PHP page), and reflection. You must explain with a good level of details and through a running example your developed artefact showing the code and its execution. 
-Brief report background</p>
+<p>
+As a requirement for the 'Advanced Databases and Big Data' project we must create a video presentation, in which we will explain the database preparation techniques, including connecting to the database, queries and results. Additionally, we must document our findings in a brief background report that will
+be available on GitHub and as a PDF.
+</p>
 
 ## Development
 
@@ -88,13 +90,17 @@ Brief report background</p>
 
 ## Issues
 
-GitHub issues are tracked [Here](https://github.com/mm1089/advanced-databases-group/issues)
+GitHub features Issues, which can be defined as a lightweight issue-tracking system available for all GitHub repositories. The ideology is that users will
+consistently use it as your project evolves. In most cases, GitHub Issues is used for reporting bugs and requesting features.
+The project issues are tracked: [Here](https://github.com/mm1089/advanced-databases-group/issues)
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Preparation
-<p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.</p>
+<p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.
+
+</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -106,7 +112,10 @@ GitHub issues are tracked [Here](https://github.com/mm1089/advanced-databases-gr
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Reflection
-<p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?</p>
+<p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?
+
+There are limitaions of the relational model when handling big data...
+</p>
 
 Designers must consider SQL when your data is highly structured and doesn't change frequently.
 
