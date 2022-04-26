@@ -11,7 +11,7 @@
 
 <br>
 
-<details open>
+<details>
 <summary>Table of Contents</summary>
 <br>
   
@@ -30,7 +30,7 @@
 
 <br>
 
-<details open>
+<details>
 <summary>Assignment Information</summary>
 <br>
 
@@ -62,6 +62,10 @@ function placeholder action ({placeholder}) {
   var another_thing
 }
 ```
+
+## Project Architecture
+
+<img width="120" alt="image" src="https://user-images.githubusercontent.com/72493335/165288032-6c7212a6-21dd-4d0d-987d-fc36367742a2.png">
 
 ## Presentation
 

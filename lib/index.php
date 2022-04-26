@@ -9,6 +9,28 @@
 <!-- Main Section for Implementation -->
 <!-- Information on assignment etc. -->
     <main>
+
+    <!-- PHP Implementation -->
+        
+
+    <div class="php">
+        <?php
+        $servername = "localhost";
+        $username = "username";
+        $password = "password";
+        
+        // Create connection
+        $conn = mysqli_connect($servername, $username, $password);
+        
+        // Check connection
+        if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+        }
+        echo "Connected successfully";
+        echo "This Assignment is due in 3 weeks!";
+        ?>
+        </div>
+        
         <body>
 <!-- Navigation bar -->
         <div class="sidenav">
@@ -18,15 +40,6 @@
         </div>
         <div class="content">
             <h1>Advanced Databases Group Project - PHP Assignment</h1>
-        </div>
-
-<!-- PHP Implementation -->
-        <div></div>
-
-        <div class="php">
-        <?php
-        echo "This Assignment is due in 3 weeks!";
-        ?>
         </div>
 
 <!-- End of Body -->
