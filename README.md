@@ -120,9 +120,10 @@ There are limitaions of the relational model when handling big data...
 Designers must consider SQL when your data is highly structured and doesn't change frequently.
 
 For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
-|SQL|NoSQL|Conclusion|
+
+|Consider SQL if...|Consider NoSQL if...|Conclusion|
 |---|---|---|
-|Data is highly structured|Data is mostly unstructured/doesn't change frequently|Something useful|
+|Data is highly structured and doesn't change frequently|Data is mostly unstructured that doesn't fit the relational model|Something useful|
 |||
 
 <!-- back to top -->
