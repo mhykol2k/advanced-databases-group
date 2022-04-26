@@ -124,7 +124,10 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 |Consider SQL if...|Consider NoSQL if...|Conclusion|
 |---|---|---|
 |Data is highly structured and doesn't change frequently|Data is mostly unstructured that doesn't fit the relational model|Something useful|
-|||
+|The project is transaction-orientated. E.g., Financial Applications|Flexability of dynamic schemas is required or want more choice over the data model||
+|A high degree of security or integrity is required|The database needs to scale||
+|Routinely execute complex queries|Horizontal scaling, across multiple georaphic locations||
+|Scale-out capabilities are not required|The application does not require the level of integrity offered by SQL databases.||
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
