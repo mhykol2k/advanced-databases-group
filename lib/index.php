@@ -9,21 +9,11 @@
 <!-- Main Section for Implementation -->
 <!-- Information on assignment etc. -->
     <main>
-        <body>
-<!-- Navigation bar -->
-        <div class="sidenav">
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
-        </div>
-        <div class="content">
-            <h1>Advanced Databases Group Project - PHP Assignment</h1>
-        </div>
 
-<!-- PHP Implementation -->
+    <!-- PHP Implementation -->
         
 
-        <div class="php">
+    <div class="php">
         <?php
         $servername = "localhost";
         $username = "username";
@@ -39,6 +29,17 @@
         echo "Connected successfully";
         echo "This Assignment is due in 3 weeks!";
         ?>
+        </div>
+        
+        <body>
+<!-- Navigation bar -->
+        <div class="sidenav">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+        <div class="content">
+            <h1>Advanced Databases Group Project - PHP Assignment</h1>
         </div>
 
 <!-- End of Body -->
