@@ -65,6 +65,12 @@ display results</p>
 
 <p>Finally, users would need to be able to run and view the results of any 3 SQL queries. The brief does not mention any particular queries therefore we just went ahead and created the queries seen in the below appendix(see all of Figure 5).</p>
 
+<p>The first SQL query we wrote for the users to have ready to run is...</p>
+
+<p>The second SQL query we wrote for the users to have ready to run is...</p>
+
+<p>The third SQL query we wrote for the users to have ready to run is...</p>
+
 ## Prerequisites
 
 <p>To run this implementation you will need to ensure that you have XXXX installed</p>
