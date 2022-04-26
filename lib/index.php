@@ -21,6 +21,7 @@
         </div>
 
 <!-- PHP Implementation -->
+        <div></div>
 
         <div class="php">
         <?php
