@@ -27,6 +27,9 @@ body {
   text-decoration: none;
   display: block;
   font-weight: 600;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
 }
 
 /* Change color on hover */
@@ -39,7 +42,6 @@ body {
 .content {
   margin-left: 200px;
   padding-left: 20px;
-  padding-bottom: 15px;
   color: black;
   text-align: center;
   border-bottom: 2px solid rgb(151, 151, 151);
