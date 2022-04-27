@@ -15,13 +15,13 @@
 <summary>Table of Contents</summary>
 <br>
   
-- [Implementation](#implementation)
-  - [Front-end](#front-end)
-  - [Back-end](#back-end)
 - [Prerequisites](#prerequisites)
 - [Project Architecture](#project-architecture)
 - [Presentation](#presentation)
-- [Development](#development)
+- [Implementation](#implementation)
+  - [Front-end](#front-end)
+  - [Back-end](#back-end)
+- [Workflow](#workflow)
 - [Issues](#issues)
 - [Preparation](#preparation)
 - [Results](#results)
@@ -46,37 +46,15 @@
 </details>
 <br>
 
-## Implementation
 
-### Front-end
-
-<p>show how to in php:
-connect to db
-edit db
-display results</p>
-
-<p>Something to do with how we created this...</p>
-
-### Back-end
-
-<p>To implement the back end we wrote a script to create and populate the existing database given to us; and create new users to manage/query it. This was done inside one big script (DB_Config_Script.sql) so that when users go to deploy the database all they have to do is copy paste the SQL queries and run them. The code to create and populate the tables can be found in the appendix at the bottom of the report.</p>
-
-<p>Next we had to take into consideration the permissions needed by the users of the system and how many different users there would be. According to the brief, users simply need to be able to insert new employees/departments and edit existing ones. Therefore we created only two users: admin and default_user (see Figure 3.0). Due to there being no mention of deleting tables these permissions were not included for the general user(see Figure 4.0).</p>
-
-<p>Finally, users would need to be able to run and view the results of any 3 SQL queries. The brief does not mention any particular queries therefore we just went ahead and created the queries seen in the below appendix(see all of Figure 5).</p>
-
-<p>The first SQL query we wrote for the users to have ready to run is...</p>
-
-<p>The second SQL query we wrote for the users to have ready to run is...</p>
-
-<p>The third SQL query we wrote for the users to have ready to run is...</p>
 
 ## Prerequisites
 
 <p>To run this implementation you will need to ensure that you have XXXX installed</p>
 
 1. MySQL
-2. Browser
+2. XAMMP
+3. Web-Browser
 
 ```sh
 function placeholder action ({placeholder}) {
@@ -96,7 +74,74 @@ As a requirement for the 'Advanced Databases and Big Data' project we must creat
 be available on GitHub and as a PDF.
 </p>
 
-## Development
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Implementation
+
+### Front-end
+
+<p>show how to in php:
+connect to db
+edit db
+display results</p>
+
+<p>Something to do with how we created this...</p>
+
+### Back-end
+
+<p>To implement the back end we wrote a script to create and populate the existing database given to us; and create new users to manage/query it. This was done inside one big script (DB_Config_Script.sql) so that when users go to deploy the database all they have to do is copy paste the SQL queries and run them. The code to create and populate the tables can be found in the appendix at the bottom of the report.
+</p>
+
+<p>Next we had to take into consideration the permissions needed by the users of the system and how many different users there would be. According to the brief, users simply need to be able to insert new employees/departments and edit existing ones. Therefore we created only two users: admin and default_user (see Figure 3.0). Due to there being no mention of deleting tables these permissions were not included for the general user(see Figure 4.0).
+</p>
+
+<p>Finally, users would need to be able to run and view the results of any 3 SQL queries. The brief does not mention any particular queries therefore we just went ahead and created the queries seen in the below appendix(see all of Figure 5).
+</p>
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<p>The first SQL query we wrote for the users to have ready to run is...</p>
+
+<details open>
+<summary>Query 1</summary>
+<br>
+
+```sql
+  EXAMPLE QUERY
+```
+</details>
+<br>
+
+<p>The second SQL query we wrote for the users to have ready to run is...</p>
+
+<details open>
+<summary>Query 2</summary>
+<br>
+
+```sql
+  EXAMPLE QUERY
+```
+</details>
+<br>
+
+<p>The third SQL query we wrote for the users to have ready to run is...</p>
+
+<details open>
+<summary>Query 3</summary>
+<br>
+
+```sql
+  EXAMPLE QUERY
+```
+</details>
+<br>
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Workflow
 
 |Artifact|Person(s) Responsible|Artifact Status|Notes|Date Completed|
 |---|---|---|---|---|
@@ -110,17 +155,6 @@ be available on GitHub and as a PDF.
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Issues
-
-GitHub features Issues, which can be defined as a lightweight issue-tracking system available for all GitHub repositories. The ideology is that users will
-consistently use it as your project evolves. In most cases, GitHub Issues is used for reporting bugs and requesting features.
-The project issues are tracked: [Here](https://github.com/mm1089/advanced-databases-group/issues)
-<img width="1107" alt="image" src="https://user-images.githubusercontent.com/72493335/165314933-0d09fc61-b3d2-415d-8ac4-e393ffbc3cad.png">
-
-
-<!-- back to top -->
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Preparation
 <p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.
 
@@ -128,6 +162,13 @@ The project issues are tracked: [Here](https://github.com/mm1089/advanced-databa
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Issues
+
+GitHub features Issues, which can be defined as a lightweight issue-tracking system available for all GitHub repositories. The ideology is that users will
+consistently use it as your project evolves. In most cases, GitHub Issues is used for reporting bugs and requesting features.
+The project issues are tracked: [Here](https://github.com/mm1089/advanced-databases-group/issues)
+<img width="1107" alt="image" src="https://user-images.githubusercontent.com/72493335/165314933-0d09fc61-b3d2-415d-8ac4-e393ffbc3cad.png">
   
 ## Results
 <p>After completeing this assignment we were able to find... similarities, differences...
@@ -171,8 +212,8 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 
 ## Appendices 
 
-<h3>Figure 1.0</h3>
-<p>Taken from DB_Config_Script.sql. This section of code from the script creates the database and respective tables.</p>
+<h4>This section of the report is for code snippets, images or any other relevant information that is not store in the markdown_</h4>
+
 
 ```sql
 /* Creating tables */
@@ -199,8 +240,13 @@ assignment.DEPT(
     CONSTRAINT DEPT_PK PRIMARY KEY (DEPTNO)
 );
 ```
-<h3>Figure 2.0</h3>
-<p>Taken from DB_Config_Script.sql. This section of code from the script populates the database tables with the data provided in the brief.</p>
+
+<h3 align="center">Figure 1.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script creates the database and respective tables.</p>
+
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ```sql
 /* Populating tables */
@@ -228,8 +274,12 @@ VALUES
 ('40', 'OPERATIONS', 'BOSTON');
 ```
 
-<h3>Figure 3.0</h3>
-<p>Taken from DB_Config_Script.sql. This section of code from the script creates the different user(s) for the system.</p>
+<h3 align="center">Figure 2.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script populates the database tables with the data provided in the brief.</p>
+
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ```sql
 /* Creating users */
@@ -237,8 +287,11 @@ CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password123';
 CREATE USER 'default_user'@'localhost' IDENTIFIED BY 'password';
 ```
 
-<h3>Figure 4.0</h3>
-<p>Taken from DB_Config_Script.sql. This section of code from the script grants the new users the necessarry permissions required.</p>
+<h3 align="center">Figure 3.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script creates the different user(s) for the system.</p>
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ```sql
 /* Granting permissions */
@@ -254,9 +307,8 @@ GRANT UPDATE ON assignment.DEPT TO 'default_user'@'localhost';
 GRANT INSERT ON assignment.DEPT TO 'default_user'@'localhost';
 ```
 
-<p>This section of the report is for code snippets, images or any other relevant information that is not store in the markdown.</p>
+<h3 align="center">Figure 4.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script grants the new users the necessarry permissions required.</p>
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
