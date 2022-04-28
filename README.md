@@ -1,5 +1,18 @@
 <div id=top></div>
-<h5 align="left">Michael McLain, William Castleman and Jure Sunic</h5>
+
+
+<div align="center" >
+
+[![mm1089 - advanced-databases-group](https://img.shields.io/static/v1?label=advanced-databases-group&message=view-source-code&color=42b883&logo=github)](https://github.com/mm1089/advanced-databases-group "View Source Code")
+[![License](https://img.shields.io/badge/License-MIT-42b883)](#license)
+[![stars - advanced-databases-group](https://img.shields.io/github/stars/mm1089/advanced-databases-group?style=social)](https://github.com/mm1089/advanced-databases-group)
+
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)]((https://github.com/mm1089/advanced-databases-group/blob/main/README.md) "Go to project documentation")
+
+<div>
+
+<div align="left">
+
 <h1 align="center"> Advanced Databases and Big Data </h1>
 <h3 align="center">Assignment 2: PHP MySQL Implementation</h3>
 <h5 align="center">Software Engineering, Computer Science</h5>
