@@ -35,7 +35,7 @@
 
         <body class="">
           <div class="sidenav">
-            <a href="new_record.html">Add New Record</a>
+            <a href="new_record.php">Add New Record</a>
             <a href="#">Edit Tables</a>
             <a href="#">GitHub</a>
             <a href="#">Read the Docs</a>
