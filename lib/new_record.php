@@ -44,7 +44,7 @@
                 <input class="form" type="text" id="MANAGER" name="MANAGER" placeholder="Manager">
                 <br>
                 <!-- <label class="form" for="HIREDATE">HIREDATE:</label> -->
-                <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy" min="1940-01-01">
+                <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy" min="1940-01-01" min="2100-01-01" required>
                 <br>
                 <!-- <label class="form" for="SAL">SALARY:</label> -->
                 <input class="form" type="number" id="SAL" name="SAL" placeholder="Salary" required>
