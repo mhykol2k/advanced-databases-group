@@ -20,10 +20,17 @@ body {
   overflow-x: hidden;
 }
 
+.title {
+  color: whitesmoke;
+  text-align: center;
+  height: 64px;
+  background-color: #042331;
+}
+
 /* Side navigation links */
 .sidenav a {
   color: white;
-  padding: 16px;
+  padding: 20px;
   text-decoration: none;
   display: block;
   font-weight: 600;
