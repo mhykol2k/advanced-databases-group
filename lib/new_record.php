@@ -8,41 +8,6 @@
 
 <script>
     function addRecord() {
-        <?php
-        require './db_connection.php';        
-        // check form is submitted
-        if(isset($_POST['submit']))
-        {    
-            // get form inputs
-            $EMPNO=$_POST['EMPNO'];
-            $ENAME=$_POST['ENAME'];
-            $JOB=$_POST['JOB'];
-            $MANAGER=$_POST['MANAGER']; 
-            $HIREDATE=date('Y-m-d', strotime($_POST['HIREDATE']));
-            $SAL=$_POST['SAL'];
-            $COMM=$_POST['COMM'];
-            $DEPTNO=$_POST['DEPTNO'];
-
-            // validating inputs
-            if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
-            || $COMM=="" || $COMM=="" || $DEPTNO==""){
-                // throwing error if fields empty
-                alert("Missing field inputs");
-            }else{
-                // preparing the query
-                $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
-                VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
-                // checking insert query worked
-                if (mysqli_query($conn, $sql)) {
-                    alert("New record has been added successfully !");
-                } else {
-                    $error="Error: " . $sql . ":-" . mysqli_error($conn);
-                    alert($error);
-                }
-                mysqli_close($conn);
-            }
-        }
-        ?>
     }
 </script>
 
@@ -64,7 +29,7 @@
         </div>
 <!-- EMP (EMPNO, ENAME, JOB, MGR#, HIREDATE, SAL, COMM, DEPTNO#) -->
         <div class="content">
-            <form class="form" action="index.php" method="POST">
+            <form class="form" method="POST">
                 <br>
                 <!-- <label class="form" for="EMPNO">EMPNO:</label> -->
                 <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number">
@@ -90,10 +55,47 @@
                 <!-- <label class="form" for="DEPTNO">DEPTNO:</label> -->
                 <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number">
                 <br>
-                <input type="submit" onclick="addRecord()">
+                <input type="submit" name="submit" value="Submit">
                 <br>
             </form>
         </div>
+
+        <!-- Insert PHP code to handle db insertion -->
+        <?php
+        require './db_connection.php';        
+        // check form is submitted
+        if(isset($_POST['submit']))
+        {    
+            // get form inputs
+            $EMPNO=$_POST['EMPNO'];
+            $ENAME=$_POST['ENAME'];
+            $JOB=$_POST['JOB'];
+            $MANAGER=$_POST['MANAGER']; 
+            $HIREDATE=$_POST['HIREDATE'];
+            $SAL=$_POST['SAL'];
+            $COMM=$_POST['COMM'];
+            $DEPTNO=$_POST['DEPTNO'];
+
+            // validating inputs
+            if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
+            || $COMM=="" || $COMM=="" || $DEPTNO==""){
+                // throwing error if fields empty
+                echo "Missing field inputs";
+            }else{
+                // preparing the query
+                $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
+                VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
+                // checking insert query worked
+                if (mysqli_query($conn, $sql)) {
+                    echo "New record has been added successfully!";
+                } else {
+                    $error="Error: " . $sql . ":-" . mysqli_error($conn);
+                    echo "$error";
+                }
+                mysqli_close($conn);
+            }
+        }
+        ?>
 
 <!-- End of Body -->
         </body>
