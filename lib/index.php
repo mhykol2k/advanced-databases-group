@@ -15,7 +15,7 @@
     <div class="php">
       <?php
         $servername = "localhost";
-        $username = "username";
+        $username = "default_user";
         $password = "password";
 
 // Create the connection
