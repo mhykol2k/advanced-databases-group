@@ -59,8 +59,8 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 echo "<tr><td>" . $row["EMPNO"]. "</td><td>" . $row["ENAME"]. "</td><td>" . $row["JOB"]. 
-                "</td></tr>" . $row["MGR"]. "</td></tr>" . $row["HIREDATE"]. "</td></tr>" . $row["SAL"]. "</td></tr>" 
-                . $row["COMM"]. "</td></tr>" . $row["DEPTNO"]. "</td></tr>";
+                "</td><td>" . $row["MGR"]. "</td><td>" . $row["HIREDATE"]. "</td><td>" . $row["SAL"]. "</td><td>" 
+                . $row["COMM"]. "</td><td>" . $row["DEPTNO"]. "</td></tr>";
             }
             echo "</table>";
         } else {
