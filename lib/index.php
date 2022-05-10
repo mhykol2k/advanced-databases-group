@@ -7,29 +7,13 @@
       <title>PHP Assignment</title>
       <link rel="stylesheet" href="../assets/main.css">
       <link rel="icon" href="../media/globe-icon.png">
+      <style>
+      table, th, td {
+          border: 1px solEMPNO black;
+      }
+      </style>
     </head>
     <main>
-
-<!-- PHP Implementation -->
-
-    <div class="php">
-      <?php
-        $servername = "localhost";
-        $username = "default_user";
-        $password = "password";
-
-// Create the connection
-
-        $conn = mysqli_connect($servername, $username, $password);
-
-// Check connection
-
-        if (!$conn) {
-          die("Connection failed: " . mysqli_connect_error());
-        }
-        echo "Connection successful";
-      ?>
-        </div>
 
 <!-- Navigation bar -->
 
@@ -43,6 +27,49 @@
           </div>
           <div class="content">
             <h1>📍Advanced Databases Group Project - PHP Home Page📍</h1>
+
+            <div class="php">
+      <?php
+        $servername = "localhost";
+        $username = "default_user";
+        $password = "password";
+        $dbname = "assignment";
+
+// Create the connection
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+
+// Check connection
+
+        if (!$conn) {
+          die("Connection failed: " . mysqli_connect_error());
+        }
+        echo "Connection successful";
+
+        $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM emp";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            echo "<table><tr><th>EMPNO</th><th>Name</th></tr>";
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "<tr><td>" . $row["EMPNO"]. "</td><td>" . $row["ENAME"]. "</td><td>" . $row["JOB"]. 
+                "</td></tr>" . $row["MGR"]. "</td></tr>" . $row["HIREDATE"]. "</td></tr>" . $row["SAL"]. "</td></tr>" 
+                . $row["COMM"]. "</td></tr>" . $row["DEPTNO"]. "</td></tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "0 results";
+        }
+
+        $conn->close();
+      ?>
+
             <div>
               <h5>You can read about how to use this service:</h5>
               <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Here</a>
