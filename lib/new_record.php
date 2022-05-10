@@ -14,34 +14,33 @@
         if(isset($_POST['submit']))
         {    
             // get form inputs
-            $EMPNO = $_POST['EMPNO'];
-            $ENAME = $_POST['ENAME'];
-            $JOB = $_POST['JOB'];
-            $MANAGER = $_POST['MANAGER']; 
-            $HIREDATE = date('Y-m-d', strotime($_POST['HIREDATE']));
-            $SAL = $_POST['SAL'];
-            $COMM = $_POST['COMM'];
-            $DEPTNO = $_POST['DEPTNO'];
+            $EMPNO = echo $_POST['EMPNO'];
+            $ENAME = echo $_POST['ENAME'];
+            $JOB = echo $_POST['JOB'];
+            $MANAGER = echo $_POST['MANAGER']; 
+            $HIREDATE = echo date('Y-m-d', strotime($_POST['HIREDATE']));
+            $SAL = echo $_POST['SAL'];
+            $COMM = echo $_POST['COMM'];
+            $DEPTNO = echo $_POST['DEPTNO'];
 
             // validating inputs
             if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
             || $COMM=="" || $COMM=="" || $DEPTNO==""){
                 // throwing error if fields empty
-                die("Missing field inputs");
+                alert("Missing field inputs");
+            }else{
+                // preparing the query
+                $sql = "INSERT INTO emp (EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
+                VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
+                // checking insert query worked
+                if (mysqli_query($conn, $sql)) {
+                    alert("New record has been added successfully !");
+                } else {
+                    $error="Error: " . $sql . ":-" . mysqli_error($conn);
+                    alert($error);
+                }
+                mysqli_close($conn);
             }
-
-            // preparing the query
-            $sql = "INSERT INTO emp (EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
-            VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
-
-            // checking insert query worked
-            if (mysqli_query($conn, $sql)) {
-                alert("New record has been added successfully !");
-            } else {
-                $error="Error: " . $sql . ":-" . mysqli_error($conn);
-                alert($error);
-            }
-            mysqli_close($conn);
         }
         ?>
     }
