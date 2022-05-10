@@ -12,6 +12,7 @@
         <body>
 <!-- Navigation bar -->
         <div class="sidenav">
+            <h2 class="title">🧑‍💼Manager Page</h2>
             <a href="index.php">Return to Home</a>
             <a href="https://github.com/mm1089/advanced-databases-group">GitHub</a>
             <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
