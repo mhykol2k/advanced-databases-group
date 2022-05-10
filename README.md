@@ -115,39 +115,62 @@ display results</p>
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<p>The first SQL query we wrote for the users to have ready to run is...</p>
+<p>The first SQL query we wrote for the users to have ready to run is a query to display all employees under a certain manager employee number (displayed below).</p>
 
 <details open>
 <summary>Query 1</summary>
 <br>
 
 ```sql
-  EXAMPLE QUERY
+/* Query 1 - All employees under certain manager EMPNO */
+SELECT EMP.EMPNO, EMP.ENAME
+FROM assignment.EMP
+WHERE MGR = '7839'
 ```
+This query works by first using 'SELECT' to select the EMPNO and ENAME fields from theh EMP table so the employees number and name is displayed in the search results. Next, we use the 'FROM' SQL command to specify the database and tables we want to query from; this being the EMP table. Finally, we use the 'WHERE' SQL command to specify the MGR fields value which is used to specify the employees managers employee number.
+
+Ideally this query will be implemented alongside some kind of drop down menu that specifies all the managers names along with employee number. This could then be used by the business to quickly see what managers are under-staffed and which are taking on responsibility for too much staff; either when employing new staff or generally.
+
 </details>
 <br>
 
-<p>The second SQL query we wrote for the users to have ready to run is...</p>
+<p>The second SQL query we wrote for the users to have ready to run displays all employees in the sales department sales figures.</p>
 
 <details open>
 <summary>Query 2</summary>
 <br>
 
 ```sql
-  EXAMPLE QUERY
+/* Query 2 - All employees working in Sales department with sales > 1000 */
+SELECT EMP.EMPNO, EMP.ENAME, EMP.SAL, DEPT.DNAME
+FROM assignment.EMP, assignment.DEPT
+INNER JOIN EMP on EMP.DEPTNO=DEPT.DEPTNO
+WHERE EMP.SAL > 1000
+AND DEPT.DNAME="SALES"
 ```
+
+This query works by first using the SQL 'SELECT' statement to select: employee number, employee name, employee sales figures, and department name fields to be displayed in the results. Next, we specify we want to query data from both tables as seen above on line 2 of the query. Now, due to the fact we need to find employees from only the SALES department we need to join the tables records to be able to query using the department name of 'SALES'. To do that we have used an SQL 'INNER JOIN' statement to connect the DEPTNO from the EMP table to the DEPTNO from the DEPT table. This could of also been done by manually finding the SALES departments DEPTNO and including it as a parameter in the WHERE statement although this would take a lot longer if there were hundreds/thousands of departments. Next, we needed to find only employees with SALES of more than 1000. To do this we simply specified it in the WHERE section of the query using the SAL field and the more than operator ('>'). Finally, we need to specify the department name so that only employees from the SALES department show up in the results.
+
 </details>
 <br>
 
-<p>The third SQL query we wrote for the users to have ready to run is...</p>
+<p>Finally, the third SQL query we wrote for the users to have ready to run displays all employees working in a certain city/location</p>
 
 <details open>
 <summary>Query 3</summary>
 <br>
 
 ```sql
-  EXAMPLE QUERY
+/* Query 3 - All employees working in certain city/LOC */
+SELECT EMP.EMPNO, EMP.ENAME, DEPT.LOC
+FROM assignment.EMP, assignment.DEPT
+INNER JOIN EMP on EMP.DEPTNO=DEPT.DEPTNO
+WHERE DEPT.LOC="CHICAGO"
 ```
+
+Firstly, we used the SQL 'SELECT' statement to select the employee number, name, and location to be displayed in the results. Next, we used 'FROM' statement to select the database and tables required; these being the employee and department table. Now, we used an 'INNER JOIN' to join the records where the DEPTNO is equal in both tables to allow us to query by the location (DEPT.LOC). Finally, as mentioned previously we need to specify the location we want the employees from this is where the sql statement 'WHERE' is used.
+
+Similar to before, ideally this would be implemented alongside a drop down menu to select the location the user would like the results from.
 </details>
 <br>
 
@@ -255,10 +278,11 @@ assignment.DEPT(
     PRIMARY KEY (DEPTNO)
 );
 ```
-
-
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<h3 align="center">Figure 2.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script populates the database tables with the data provided in the brief.</p>
 
 ```sql
 /* Populating tables */
@@ -285,25 +309,22 @@ VALUES
 ('30', 'SALES', 'CHICAGO'),
 ('40', 'OPERATIONS', 'BOSTON');
 ```
-
-<h3 align="center">Figure 2.0</h3>
-<p align="center">Taken from DB_Config_Script.sql. This section of code from the script populates the database tables with the data provided in the brief.</p>
-
-
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<h3 align="center">Figure 3.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script creates the different user(s) for the system.</p>
 
 ```sql
 /* Creating users */
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password123';
 CREATE USER 'default_user'@'localhost' IDENTIFIED BY 'password';
 ```
-
-<h3 align="center">Figure 3.0</h3>
-<p align="center">Taken from DB_Config_Script.sql. This section of code from the script creates the different user(s) for the system.</p>
-
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<h3 align="center">Figure 4.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script grants the new users the necessarry permissions required.</p>
 
 ```sql
 /* Granting permissions */
@@ -318,9 +339,5 @@ GRANT SELECT ON assignment.DEPT TO 'default_user'@'localhost';
 GRANT UPDATE ON assignment.DEPT TO 'default_user'@'localhost';
 GRANT INSERT ON assignment.DEPT TO 'default_user'@'localhost';
 ```
-
-<h3 align="center">Figure 4.0</h3>
-<p align="center">Taken from DB_Config_Script.sql. This section of code from the script grants the new users the necessarry permissions required.</p>
-
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
