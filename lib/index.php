@@ -37,7 +37,7 @@
           <div class="sidenav">
             <h2 class="title">📍Home Page</h2>
             <a href="new_record.php">Add New Record</a>
-            <a href="table_manager.php">Edit Tables</a>
+            <a href="manager.php">Edit Tables</a>
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
             <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
           </div>
