@@ -29,30 +29,30 @@
         </div>
 <!-- EMP (EMPNO, ENAME, JOB, MGR#, HIREDATE, SAL, COMM, DEPTNO#) -->
         <div class="content">
-            <form class="form">
+            <form class="form" action="results.php" method="post">
                 <br>
-                <label class="form" for="EMPNO">EMPNO:</label>
+                <!-- <label class="form" for="EMPNO">EMPNO:</label> -->
                 <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number">
-
-                <label class="form" for="ENAME">ENAME:</label>
+                <br>
+                <!-- <label class="form" for="ENAME">ENAME:</label> -->
                 <input class="form" type="text" id="ENAME" name="ENAME" placeholder="Employee Name">
-
-                <label class="form" for="JOB">JOB:</label>
+                <br>
+                <!-- <label class="form" for="JOB">JOB:</label> -->
                 <input class="form" type="text" id="JOB" name="JOB" placeholder="Job">
-
-                <label class="form" for="MANAGER">MANAGER:</label>
+                <br>
+                <!-- <label class="form" for="MANAGER">MANAGER:</label> -->
                 <input class="form" type="text" id="MANAGER" name="MANAGER" placeholder="Manager">
-
-                <label class="form" for="HIREDATE">HIREDATE:</label>
+                <br>
+                <!-- <label class="form" for="HIREDATE">HIREDATE:</label> -->
                 <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy">
-
-                <label class="form" for="SAL">SALARY:</label>
+                <br>
+                <!-- <label class="form" for="SAL">SALARY:</label> -->
                 <input class="form" type="number" id="SAL" name="SAL" placeholder="Salary">
-
-                <label class="form" for="COMM">COMMISION:</label>
+                <br>
+                <!-- <label class="form" for="COMM">COMMISION:</label> -->
                 <input class="form" type="number" id="COMM" name="COMM" placeholder="Commision">
-
-                <label class="form" for="DEPTNO">DEPTNO:</label>
+                <br>
+                <!-- <label class="form" for="DEPTNO">DEPTNO:</label> -->
                 <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number">
               </form>
               <br>
