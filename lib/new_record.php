@@ -11,7 +11,20 @@
         alert("Record succesfully added!");
     }
 </script>
-    
+
+<?php
+// define variables and set to empty values
+$EMPNO_ERR = $ENAME_ERR = $MANAGER_ERR = $HIREDATE_ERR = $SAL_ERR = $COMM_ERR = $DEPTNO_ERR = "";
+$EMPNO = $ENAME = $JOB = $MANAGER = $HIREDATE =  $SAL = $COMM = $DEPTNO = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["EMPNO"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["EMPNO"]);
+  }
+}
+?>
 
 <!-- Main Section for Implementation -->
 <!-- Information on assignment etc. -->
@@ -54,9 +67,10 @@
                 <br>
                 <!-- <label class="form" for="DEPTNO">DEPTNO:</label> -->
                 <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number">
-              </form>
-              <br>
-              <button onclick="addRecord()" type="submit">Add New Record</button>
+                <br>
+                <input type="submit" onclick="addRecord()">
+                <br>
+            </form>
         </div>
 
 <!-- End of Body -->
