@@ -32,28 +32,28 @@
             <form class="form" method="POST">
                 <br>
                 <!-- <label class="form" for="EMPNO">EMPNO:</label> -->
-                <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number">
+                <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number" required>
                 <br>
                 <!-- <label class="form" for="ENAME">ENAME:</label> -->
-                <input class="form" type="text" id="ENAME" name="ENAME" placeholder="Employee Name">
+                <input class="form" type="text" id="ENAME" name="ENAME" placeholder="Employee Name" required>
                 <br>
                 <!-- <label class="form" for="JOB">JOB:</label> -->
-                <input class="form" type="text" id="JOB" name="JOB" placeholder="Job">
+                <input class="form" type="text" id="JOB" name="JOB" placeholder="Job" required>
                 <br>
                 <!-- <label class="form" for="MANAGER">MANAGER:</label> -->
                 <input class="form" type="text" id="MANAGER" name="MANAGER" placeholder="Manager">
                 <br>
                 <!-- <label class="form" for="HIREDATE">HIREDATE:</label> -->
-                <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy">
+                <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy" min="1940-01-01">
                 <br>
                 <!-- <label class="form" for="SAL">SALARY:</label> -->
-                <input class="form" type="number" id="SAL" name="SAL" placeholder="Salary">
+                <input class="form" type="number" id="SAL" name="SAL" placeholder="Salary" required>
                 <br>
                 <!-- <label class="form" for="COMM">COMMISION:</label> -->
                 <input class="form" type="number" id="COMM" name="COMM" placeholder="Commision">
                 <br>
                 <!-- <label class="form" for="DEPTNO">DEPTNO:</label> -->
-                <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number">
+                <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number" required>
                 <br>
                 <input type="submit" name="submit" value="Submit">
                 <br>
