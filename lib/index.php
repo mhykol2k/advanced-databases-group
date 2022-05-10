@@ -9,7 +9,7 @@
       <link rel="icon" href="../media/globe-icon.png">
       <style>
       table, th, td {
-          border: 1px solEMPNO black;
+          border: 1px solid black;
       }
       </style>
     </head>
