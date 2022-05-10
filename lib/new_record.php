@@ -9,6 +9,11 @@
 <script>
     function addRecord() {
         <?php
+        $servername = "localhost";
+        $username = "default_user";
+        $password = "password";
+        $dbname = "assignment";
+        
         // Create the connection
         $conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
@@ -19,20 +24,20 @@
         if(isset($_POST['submit']))
         {    
             // get form inputs
-            $EMPNO = $_GET['EMPNO'];
-            $ENAME = $_GET['ENAME'];
-            $JOB = $_GET['JOB'];
-            $MANAGER = $_GET['MANAGER'] 
-            $HIREDATE = $_GET['HIREDATE']
-            $SAL = $_GET['SAL']
-            $COMM = $_GET['COMM']
-            $DEPTNO = $_GET['DEPTNO']
+            $EMPNO = $_POST['EMPNO'];
+            $ENAME = $_POST['ENAME'];
+            $JOB = $_POST['JOB'];
+            $MANAGER = $_POST['MANAGER']; 
+            $HIREDATE = date('Y-m-d', strotime($_POST['HIREDATE']));
+            $SAL = $_POST['SAL'];
+            $COMM = $_POST['COMM'];
+            $DEPTNO = $_POST['DEPTNO'];
 
             // validating inputs
             if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
             || $COMM=="" || $COMM=="" || $DEPTNO==""){
                 // throwing error if fields empty
-                die("Missing field inputs")
+                die("Missing field inputs");
             }
 
             // preparing the query
@@ -70,7 +75,7 @@
         </div>
 <!-- EMP (EMPNO, ENAME, JOB, MGR#, HIREDATE, SAL, COMM, DEPTNO#) -->
         <div class="content">
-            <form class="form" action="index.php" method="post">
+            <form class="form" action="index.php" method="POST">
                 <br>
                 <!-- <label class="form" for="EMPNO">EMPNO:</label> -->
                 <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number">
