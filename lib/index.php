@@ -17,7 +17,6 @@
 
 <!-- Navigation bar -->
 
-        <body class="">
           <div class="sidenav">
             <h2 class="title">📍Home Page</h2>
             <a href="new_record.php">Add New Record</a>
@@ -27,6 +26,10 @@
           </div>
           <div class="content">
             <h1>📍Advanced Databases Group Project - PHP Home Page📍</h1>
+            <div>
+              <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">How to use this service</a>
+            </div>
+            <br>
 
             <div class="php">
       <?php
@@ -69,13 +72,8 @@
 
         $conn->close();
       ?>
-
-            <div>
-              <h5>You can read about how to use this service:</h5>
-              <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Here</a>
-            </div>
+      <br>
           </div>
-        </body>
     </main>
 
 <!-- Footer Segment -->
