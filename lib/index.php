@@ -49,7 +49,7 @@
         if (!$conn) {
           die("Connection failed: " . mysqli_connect_error());
         }
-        echo "Connection successful";
+        echo "You have successfully connected to the database";
 
         $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM emp";
         $result = $conn->query($sql);
