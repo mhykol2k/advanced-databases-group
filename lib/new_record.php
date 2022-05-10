@@ -30,7 +30,7 @@
                 alert("Missing field inputs");
             }else{
                 // preparing the query
-                $sql = "INSERT INTO emp (EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
+                $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
                 VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
                 // checking insert query worked
                 if (mysqli_query($conn, $sql)) {

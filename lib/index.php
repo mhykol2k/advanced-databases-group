@@ -34,9 +34,9 @@
             <div class="php">
       <?php
         // connect to db
-        require './db_connection.php'
+        require './db_connection.php';
         // prepping sql query
-        $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM emp";
+        $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM EMP";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
