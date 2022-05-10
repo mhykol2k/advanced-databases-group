@@ -35,8 +35,8 @@
   - [Front-end](#front-end)
   - [Back-end](#back-end)
 - [Workflow](#workflow)
-- [Issues](#issues)
 - [Preparation](#preparation)
+- [Issues](#issues)
 - [Results](#results)
 - [Reflection](#reflection)
 - [Conclusion](#conclusion)
@@ -225,8 +225,10 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 
 ## Appendices 
 
-<h4>This section of the report is for code snippets, images or any other relevant information that is not store in the markdown_</h4>
+<h4>This section of the report is for code snippets, images or any other relevant information that is not apparent at first glance</h4>
 
+<h3 align="center">Figure 1.0</h3>
+<p align="center">Taken from DB_Config_Script.sql. This section of code from the script creates the database and respective tables.</p>
 
 ```sql
 /* Creating tables */
@@ -242,7 +244,7 @@ assignment.EMP(
     SAL decimal(6,2) NOT NULL,
     COMM decimal(6,2),
     DEPTNO int NOT NULL references assignment.EMP(DEPTNO),
-    CONSTRAINT EMP_PK PRIMARY KEY (EMPNO)
+    PRIMARY KEY (EMPNO)
 );
 
 CREATE TABLE 
@@ -250,12 +252,9 @@ assignment.DEPT(
     DEPTNO int NOT NULL,
     DNAME varchar(255) NOT NULL,
     LOC varchar(255) NOT NULL,
-    CONSTRAINT DEPT_PK PRIMARY KEY (DEPTNO)
+    PRIMARY KEY (DEPTNO)
 );
 ```
-
-<h3 align="center">Figure 1.0</h3>
-<p align="center">Taken from DB_Config_Script.sql. This section of code from the script creates the database and respective tables.</p>
 
 
 <!-- back to top -->
