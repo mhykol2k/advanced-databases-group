@@ -93,7 +93,7 @@
             // close db connection
             mysqli_close($conn);
             // call alert and redirect
-            addRecord();
+            echo '<script type="text/javascript">addRecord();</script>';
         }
         ?>
 
