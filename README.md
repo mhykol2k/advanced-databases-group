@@ -11,7 +11,6 @@
 
 <div>
 
-<div align="left">
 
 <h1 align="center"> Advanced Databases and Big Data </h1>
 <h3 align="center">Assignment 2: PHP MySQL Implementation</h3>
@@ -23,6 +22,8 @@
 <h5 align="center">Due: 16th May 2022</h5>
 
 <br>
+
+<div align="left">
 
 <details>
 <summary>Table of Contents</summary>
@@ -80,6 +81,17 @@ git clone https://github.com/mm1089/advanced-databases-group.git
 # You can now access the project locally:
 http://localhost/advanced-databases-group/lib/index.php
 ```
+
+<details>
+<summary>Problems with installation?</summary>
+<p>If you cannot install through GitHub or bash CLI, you can  download the repository and drop it into the folder:
+</p>
+
+```bash
+C:\xampp\htdocs\
+```
+
+</details>
 
 ## Project Architecture
 
@@ -212,12 +224,14 @@ The project issues are tracked: [Here](https://github.com/mm1089/advanced-databa
 <img width="1107" alt="image" src="https://user-images.githubusercontent.com/72493335/165314933-0d09fc61-b3d2-415d-8ac4-e393ffbc3cad.png">
   
 ## Results
+
 <p>After completeing this assignment we were able to find... similarities, differences...
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Reflection
+
 <p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?
 
 There are limitaions of the relational model when handling big data...
@@ -239,6 +253,7 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Conclusion
+
 <p>In summation, we were able to deduce...<p>
   
 <!-- back to top -->
