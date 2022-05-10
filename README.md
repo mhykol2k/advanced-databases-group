@@ -63,17 +63,22 @@
 
 ## Prerequisites
 
-<p>To run this implementation you will need to ensure that you have XXXX installed</p>
+<p>To run this implementation you will need to ensure that you have the following prerequisites installed:</p>
 
-1. MySQL
-2. XAMMP
-3. Web-Browser
+1. XAMMP
+2. Web-Browser (Chrome, Edge or Firefox)
 
-```sh
-function placeholder action ({placeholder}) {
-  const something_else
-  var another_thing
-}
+```bash
+# Select the htdocs directory in Xampp Folder.
+cd C:\xampp\htdocs\
+
+# Clone the group repository into htdocs.
+git clone https://github.com/mm1089/advanced-databases-group.git
+
+# Start Apache and MySQL server on the XAMPP Application.
+
+# You can now access the project locally:
+http://localhost/advanced-databases-group/lib/index.php
 ```
 
 ## Project Architecture
@@ -183,10 +188,10 @@ Similar to before, ideally this would be implemented alongside a drop down menu 
 |---|---|---|---|---|
 |~~_**GitHub Documentation**_~~|Michael McLain|&check; (complete)|_Extra Information_|_**25/04/22**_|
 |~~_**Design Report**_~~|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|_**HTML**_| Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|_**CSS**_|Michael McLain, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|~~_**HTML**_~~| Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|~~_**CSS**_~~|Michael McLain, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
 |_**PHP**_|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|_**MySQL Scripting**_|William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|~~_**MySQL Scripting**_~~|William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
