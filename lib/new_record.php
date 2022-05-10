@@ -8,6 +8,8 @@
 
 <script>
     function addRecord() {
+        alert("Record added successfully");
+        location.replace("./index.php");
     }
 </script>
 
@@ -75,25 +77,23 @@
             $SAL=$_POST['SAL'];
             $COMM=$_POST['COMM'];
             $DEPTNO=$_POST['DEPTNO'];
+            
+            // preparing the query
+            $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO)
+            VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
 
-            // validating inputs
-            if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
-            || $COMM=="" || $COMM=="" || $DEPTNO==""){
-                // throwing error if fields empty
-                echo "Missing field inputs";
-            }else{
-                // preparing the query
-                $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO)
-                VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
-                // checking insert query worked
-                if (mysqli_query($conn, $sql)) {
-                    echo "New record has been added successfully!";
-                } else {
-                    $error="Error: " . $sql . ":-" . mysqli_error($conn);
-                    echo "$error";
-                }
-                mysqli_close($conn);
+            // checking insert query worked
+            if (mysqli_query($conn, $sql)) {
+                echo "New record has been added successfully!";
+            } else {
+                $error="Error: " . $sql . ":-" . mysqli_error($conn);
+                echo "$error";
             }
+
+            // close db connection
+            mysqli_close($conn);
+            // call alert and redirect
+            addRecord();
         }
         ?>
 
