@@ -8,45 +8,49 @@
 
 <script>
     function addRecord() {
-
         <?php
+        // Create the connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        // check form is submitted
         if(isset($_POST['submit']))
         {    
-            $EMPNO = $_POST['EMPNO'];
-            $ENAME = $_POST['ENAME'];
-            $JOB = $_POST['JOB'];
-            $MANAGER = $_POST['MANAGER'] 
-            $HIREDATE = $_POST['HIREDATE']
-            $SAL = $_POST['SAL']
-            $COMM = $_POST['COMM']
-            $DEPTNO = $_POST['DEPTNO']
+            // get form inputs
+            $EMPNO = $_GET['EMPNO'];
+            $ENAME = $_GET['ENAME'];
+            $JOB = $_GET['JOB'];
+            $MANAGER = $_GET['MANAGER'] 
+            $HIREDATE = $_GET['HIREDATE']
+            $SAL = $_GET['SAL']
+            $COMM = $_GET['COMM']
+            $DEPTNO = $_GET['DEPTNO']
 
+            // validating inputs
+            if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
+            || $COMM=="" || $COMM=="" || $DEPTNO==""){
+                // throwing error if fields empty
+                die("Missing field inputs")
+            }
+
+            // preparing the query
             $sql = "INSERT INTO emp (EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
             VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
+
+            // checking insert query worked
             if (mysqli_query($conn, $sql)) {
-                echo "New record has been added successfully !";
+                alert("New record has been added successfully !");
             } else {
-                echo "Error: " . $sql . ":-" . mysqli_error($conn);
+                $error="Error: " . $sql . ":-" . mysqli_error($conn);
+                alert($error);
             }
             mysqli_close($conn);
         }
         ?>
     }
 </script>
-
-<?php
-// define variables and set to empty values
-$EMPNO_ERR = $ENAME_ERR = $MANAGER_ERR = $HIREDATE_ERR = $SAL_ERR = $COMM_ERR = $DEPTNO_ERR = "";
-$EMPNO = $ENAME = $JOB = $MANAGER = $HIREDATE =  $SAL = $COMM = $DEPTNO = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["EMPNO"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["EMPNO"]);
-  }
-}
-?>
 
 <!-- Main Section for Implementation -->
 <!-- Information on assignment etc. -->
