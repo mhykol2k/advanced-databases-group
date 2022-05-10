@@ -8,7 +8,29 @@
 
 <script>
     function addRecord() {
-        alert("Record succesfully added!");
+
+        <?php
+        if(isset($_POST['submit']))
+        {    
+            $EMPNO = $_POST['EMPNO'];
+            $ENAME = $_POST['ENAME'];
+            $JOB = $_POST['JOB'];
+            $MANAGER = $_POST['MANAGER'] 
+            $HIREDATE = $_POST['HIREDATE']
+            $SAL = $_POST['SAL']
+            $COMM = $_POST['COMM']
+            $DEPTNO = $_POST['DEPTNO']
+
+            $sql = "INSERT INTO emp (EMPNO,ENAME,JOB,MANAGER,HIREDATE,SAL,COMM,DEPTNO)
+            VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
+            if (mysqli_query($conn, $sql)) {
+                echo "New record has been added successfully !";
+            } else {
+                echo "Error: " . $sql . ":-" . mysqli_error($conn);
+            }
+            mysqli_close($conn);
+        }
+        ?>
     }
 </script>
 
@@ -44,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 <!-- EMP (EMPNO, ENAME, JOB, MGR#, HIREDATE, SAL, COMM, DEPTNO#) -->
         <div class="content">
-            <form class="form" action="results.php" method="post">
+            <form class="form" action="index.php" method="post">
                 <br>
                 <!-- <label class="form" for="EMPNO">EMPNO:</label> -->
                 <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number">
