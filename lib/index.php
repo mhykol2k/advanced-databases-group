@@ -33,27 +33,9 @@
 
             <div class="php">
       <?php
-        $servername = "localhost";
-        $username = "default_user";
-        $password = "password";
-        $dbname = "assignment";
-
-// Create the connection
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-
-// Check connection
-
-        if (!$conn) {
-          die("Connection failed: " . mysqli_connect_error());
-        }
-        echo "You have successfully connected to the database";
-
+        // connect to db
+        require './db_connection.php'
+        // prepping sql query
         $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM emp";
         $result = $conn->query($sql);
 
