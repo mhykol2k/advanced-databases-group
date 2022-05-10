@@ -14,14 +14,14 @@
         if(isset($_POST['submit']))
         {    
             // get form inputs
-            $EMPNO = echo $_POST['EMPNO'];
-            $ENAME = echo $_POST['ENAME'];
-            $JOB = echo $_POST['JOB'];
-            $MANAGER = echo $_POST['MANAGER']; 
-            $HIREDATE = echo date('Y-m-d', strotime($_POST['HIREDATE']));
-            $SAL = echo $_POST['SAL'];
-            $COMM = echo $_POST['COMM'];
-            $DEPTNO = echo $_POST['DEPTNO'];
+            $EMPNO=$_POST['EMPNO'];
+            $ENAME=$_POST['ENAME'];
+            $JOB=$_POST['JOB'];
+            $MANAGER=$_POST['MANAGER']; 
+            $HIREDATE=date('Y-m-d', strotime($_POST['HIREDATE']));
+            $SAL=$_POST['SAL'];
+            $COMM=$_POST['COMM'];
+            $DEPTNO=$_POST['DEPTNO'];
 
             // validating inputs
             if($EMPNO=="" || $ENAME=="" || $JOB=="" || $MANAGER=="" || $HIREDATE=="" || $SAL==""
