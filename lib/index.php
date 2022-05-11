@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <!-- Stylesheet and Assets -->
-
 <html>
     <head>
       <title>PHP Assignment</title>
@@ -9,37 +7,30 @@
       <link rel="icon" href="../media/globe-icon.png">
       <style>
       table, th, td {
-          border: 1px solid black;
+          border: 2px solid black;
+          background-color: white;
+          padding: 4px;
       }
       </style>
     </head>
-    <main>
-
 <!-- Navigation bar -->
-
+    <main>
           <div class="sidenav">
-            <h2 class="title">🛖Home Page</h2>
             <a href="new_record.php">Add New Record</a>
-            <a href="manager.php">Edit Tables</a>
           </div>
-
           <div class="sidenavlinks">
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
             <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
           </div>
           <div class="content">
-            <h1>🛖</h1>
-            <h2>Homepage</h2>
-            <div>
-              <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md#prerequisites">How to use this service</a>
-            </div>
+            <h1>📋</h1>
+            <h1>View Tables</h1>
             <br>
-
             <div class="php">
       <?php
-        // connect to db
+// Connect to db
         require './db_connection.php';
-        // prepping sql query
+// Prepping sql query
         $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM EMP";
         $result = $conn->query($sql);
 
@@ -55,14 +46,12 @@
         } else {
             echo "0 results";
         }
-
         $conn->close();
       ?>
       <br>
-          </div>
+      </div>
     </main>
 </html>
-
 <!-- Resources Used -->
 <!-- http://php.net/manual/en/faq.installation.php#faq.installation.addtopath -->
 <!-- For Issue #1 'bash: php: command not found' -->
