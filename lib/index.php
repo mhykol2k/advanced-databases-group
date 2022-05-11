@@ -18,16 +18,20 @@
 <!-- Navigation bar -->
 
           <div class="sidenav">
-            <h2 class="title">📍Home Page</h2>
+            <h2 class="title">🛖Home Page</h2>
             <a href="new_record.php">Add New Record</a>
             <a href="manager.php">Edit Tables</a>
+          </div>
+
+          <div class="sidenavlinks">
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
             <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
           </div>
           <div class="content">
-            <h1>📍Advanced Databases Group Project - PHP Home Page📍</h1>
+            <h1>🛖</h1>
+            <h2>Homepage</h2>
             <div>
-              <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">How to use this service</a>
+              <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md#prerequisites">How to use this service</a>
             </div>
             <br>
 

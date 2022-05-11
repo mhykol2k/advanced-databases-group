@@ -19,21 +19,22 @@
         <body>
 <!-- Navigation bar -->
         <div class="sidenav">
-            <h2 class="title">➕New Record</h2>
+            <h2 class="title">✍️New Record</h2>
             <a href="index.php">Return to Home</a>
-            <a href="https://github.com/mm1089/advanced-databases-group">GitHub</a>
-            <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
+        <div class="sidenavlinks">
+            <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
+            <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md#prerequisites">Read the Docs</a>
+        </div>
         </div>
         <div class="content">
-            <h1>➕Create new Record➕</h1>
-            <h5>You can create new records here</h5>
-            <h5>Simply fill in the boxes below and submit!</h5>
+            <h1>✍️</h1>
+            <h2>Create a new record</h2>
         </div>
 <!-- EMP (EMPNO, ENAME, JOB, MGR#, HIREDATE, SAL, COMM, DEPTNO#) -->
         <div class="content">
             <form class="form" method="POST">
                 <br>
-                <!-- <label class="form" for="EMPNO">EMPNO:</label> -->
+                <label class="form" for="EMPNO">EMPNO:</label>
                 <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number" required>
                 <br>
                 <!-- <label class="form" for="ENAME">ENAME:</label> -->
