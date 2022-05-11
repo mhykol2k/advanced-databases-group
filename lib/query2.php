@@ -34,7 +34,7 @@
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            echo "<table border='2' width='1000' cellspacing='0'><tr bgcolor='grey'><th>EMPNO</th><th>Name</th><th>Salary</th><th>Department number</th></tr>";
+            echo "<table border='2' width='1000' cellspacing='0'><tr bgcolor='grey'><th>Employee number</th><th>Employee Name</th><th>Salary</th><th>Department name</th></tr>";
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 echo "<tr bgcolor='cadetblue'><td>" . $row["EMPNO"]. "</td><td>" . $row["ENAME"]. "</td><td>" 
