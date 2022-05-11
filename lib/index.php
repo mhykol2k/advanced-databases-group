@@ -17,6 +17,9 @@
     <main>
           <div class="sidenav">
             <a href="new_record.php">Add New Record</a>
+            <a href="query1.php">Query 1</a>
+            <a href="query2.php">Query 2</a>
+            <a href="query3.php">Query 3</a>
           </div>
           <div class="sidenavlinks">
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>

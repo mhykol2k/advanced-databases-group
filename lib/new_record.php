@@ -17,6 +17,9 @@
         <body>
         <div class="sidenav">
             <a href="index.php">Return to Home</a>
+            <a href="query1.php">Query 1</a>
+            <a href="query2.php">Query 2</a>
+            <a href="query3.php">Query 3</a>
         <div class="sidenavlinks">
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
             <a href="guide.php">Installation Guide</a>
