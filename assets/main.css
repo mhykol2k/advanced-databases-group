@@ -23,7 +23,7 @@ body {
 .title {
   color: whitesmoke;
   text-align: center;
-  height: 64px;
+  height: 24px;
   background-color: #042331;
 }
 
@@ -45,6 +45,35 @@ body {
   background-color: darkgray;
   color: whitesmoke;
   padding-left: 25px;
+}
+
+.sidenavlinks {
+  height: 15%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background: #042331;
+  overflow-x: hidden;
+}
+
+.sidenavlinks a:hover {
+  background-color: darkgray;
+  color: whitesmoke;
+  padding-left: 25px;
+}
+
+.sidenavlinks a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
 }
 
 /* Style the content */
@@ -85,4 +114,15 @@ body {
   display: inline-block;
   padding: 5px;
   text-align: center;
+}
+
+.php {
+  margin: auto;
+  margin-left: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
