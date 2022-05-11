@@ -19,7 +19,31 @@
           </div>
         <body>
             <div class="content">
-                <h1></h1>
+                <h1>Query 1 - All employees under certain manager EMPNO</h1>
+                <br>
+            <div class="php">
+      <?php
+// Connect to db
+        require './db_connection.php';
+// Prepping sql query
+        $sql = "SELECT EMP.EMPNO, EMP.ENAME
+        FROM assignment.EMP
+        WHERE MGR = '7839'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            echo "<table border='2' width='1000' cellspacing='0'><tr bgcolor='grey'><th>EMPNO</th><th>Name</th></tr>";
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "<tr bgcolor='cadetblue'><td>" . $row["EMPNO"]. "</td><td>" . $row["ENAME"]. "</td></tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "0 results";
+        }
+        $conn->close();
+      ?>
+      <br>
             
             </div>
         </body>
