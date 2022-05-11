@@ -20,6 +20,7 @@
           </div>
           <div class="sidenavlinks">
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
+            <a href="guide.php">Installation Guide</a>
             <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
           </div>
           <div class="content">

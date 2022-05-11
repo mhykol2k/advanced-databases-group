@@ -19,6 +19,7 @@
             <a href="index.php">Return to Home</a>
         <div class="sidenavlinks">
             <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
+            <a href="guide.php">Installation Guide</a>
             <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md#prerequisites">Read the Docs</a>
         </div>
         </div>
@@ -54,8 +55,7 @@
                 <label class="form" for="DEPTNO">Department Number:</label>
                 <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number" required>
                 <br>
-                <input type="submit" name="submit" value="Create new Record">
-                <br>
+                <input type="submit" name="submit" value="Create new Record">   
             </form>
         </div>
 <!-- Insert PHP code to handle db insertion -->
