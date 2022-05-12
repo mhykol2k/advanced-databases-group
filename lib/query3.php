@@ -26,11 +26,10 @@
 // Connect to db
         require './db_connection.php';
 // Prepping sql query
-        $sql = "SELECT EMP.EMPNO, EMP.ENAME, EMP.SAL, DEPT.DNAME
-        FROM assignment.EMP, assignment.DEPT
-        INNER JOIN EMP on EMP.DEPTNO=DEPT.DEPTNO
-        WHERE EMP.SAL > 1000
-        AND DEPT.DNAME='SALES' ";
+        $sql = "SELECT EMP.EMPNO, EMP.ENAME, DEPT.LOC
+        FROM assignment.DEPT
+        INNER JOIN assignment.EMP on EMP.DEPTNO=DEPT.DEPTNO
+        WHERE DEPT.LOC="CHICAGO"";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
