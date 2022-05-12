@@ -27,10 +27,8 @@
         require './db_connection.php';
 // Prepping sql query
         $sql = "SELECT EMP.EMPNO, EMP.ENAME, EMP.SAL, DEPT.DNAME
-        FROM assignment.EMP, assignment.DEPT
-        INNER JOIN EMP on EMP.DEPTNO=DEPT.DEPTNO
-        WHERE EMP.SAL > 1000
-        AND DEPT.DNAME='SALES'";
+        FROM assignment.DEPT INNER JOIN assignment.EMP ON EMP.DEPTNO = DEPT.DEPTNO
+        WHERE EMP.SAL > 1000 AND DEPT.DNAME = "SALES" LIMIT 0, 25";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
