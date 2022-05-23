@@ -54,7 +54,7 @@
       <br>
       <br>
       <br>
-      <h2>List of the employees and their details</h2>
+      <h2>List of the departments and their details</h2>
       <?php
 // Connect to db
         require './db_connection.php';
