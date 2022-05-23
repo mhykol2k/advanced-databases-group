@@ -2,6 +2,7 @@
 
 
 <div align="center" >
+</div>
 
 [![mm1089 - advanced-databases-group](https://img.shields.io/static/v1?label=advanced-databases-group&message=view-source-code&color=42b883&logo=github)](https://github.com/mm1089/advanced-databases-group "View Source Code")
 [![License](https://img.shields.io/badge/License-MIT-42b883)](#license)
@@ -9,7 +10,7 @@
 
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)]((https://github.com/mm1089/advanced-databases-group/blob/main/README.md) "Go to project documentation")
 
-<div>
+
 
 
 <h1 align="center"> Advanced Databases and Big Data </h1>
@@ -277,14 +278,13 @@ After completeing this assignment we were able to find... similarities, differen
 
 ## Reflection
 
-<p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?
+<p>There are limitations with the relational model when handling big data. However, the NoSQL models and technologies have succeeded in overcoming those limitations
 
-There are limitaions of the relational model when handling big data...
-</p>
 
 Designers must consider SQL when your data is highly structured and doesn't change frequently.
 
 For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
+</p>
 
 |Consider SQL if...|Consider NoSQL if...|
 |---|---|
@@ -299,7 +299,7 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 
 ## Conclusion
 
-In summation, we were able to deduce...
+In summation, we were able to use PHP to create a new record, and view the current records. Addtionally, we managed to run 3 complex queries (Detailed in Appendix).
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
