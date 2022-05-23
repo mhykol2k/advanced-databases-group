@@ -278,12 +278,20 @@ After completeing this assignment we were able to find... similarities, differen
 
 ## Reflection
 
-<p>There are limitations with the relational model when handling big data. However, the NoSQL models and technologies have succeeded in overcoming those limitations
+<p>There are limitations with the relational model when handling big data. However, the NoSQL models and technologies have succeeded in overcoming those limitations. 
+For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
 
-
+Relational databases are a kind of management system in which tables are used to store all forms of data.
+It is the standard way for software developers to store complex data and once the data is stored inside the table it can be retrieved at any time. 
 Designers must consider SQL when your data is highly structured and doesn't change frequently.
 
-For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
+The cost involved in a releational database can be significant. Often multiple types of software that needs to be purchased. 
+Moreover, a professional technician is usually required to maintain the system.
+
+Addtionally, relational databases have poor performance, although its speed is still considerably high due to the ease and simplicity.
+
+Finally, compared to other types of models, relational database models are simple, and avoids complex structuring.
+As a result, relational databases do not require complex queries. 
 </p>
 
 |Consider SQL if...|Consider NoSQL if...|

@@ -60,7 +60,7 @@
             $LOC=$_POST['LOC'];
             
 // Preparing the query
-            $sql = "INSERT INTO assignment.emp(DEPTNO,DNAME,LOC)
+            $sql = "INSERT INTO assignment.dept(DEPTNO,DNAME,LOC)
             VALUES ('$DEPTNO','$DNAME','$LOC')";
 
             // checking insert query worked
