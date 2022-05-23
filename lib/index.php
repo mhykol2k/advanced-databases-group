@@ -21,11 +21,6 @@
             <a href="query2.php">Query 2</a>
             <a href="query3.php">Query 3</a>
           </div>
-          <div class="sidenavlinks">
-            <a href="https://github.com/mm1089/advanced-databases-group/">GitHub</a>
-            <a href="guide.php">Installation Guide</a>
-            <a href="https://github.com/mm1089/advanced-databases-group/blob/main/README.md">Read the Docs</a>
-          </div>
           <div class="content">
             <h1>📋</h1>
             <h1>View Tables</h1>
