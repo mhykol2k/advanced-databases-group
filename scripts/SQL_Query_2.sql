@@ -1,4 +1,8 @@
-/* Query 2 - All employees working in Sales department with sales > 1000 */
-SELECT EMP.EMPNO, EMP.ENAME, EMP.SAL, DEPT.DNAME
-FROM assignment.DEPT INNER JOIN assignment.EMP ON EMP.DEPTNO = DEPT.DEPTNO
-WHERE EMP.SAL > 1000 AND DEPT.DNAME = "SALES" LIMIT 0, 25
+/* Query 2 - Number of Clerks in each department */
+SELECT D.DNAME,
+       (SELECT COUNT(E.EMPNO)
+        FROM assignment.EMP E
+        INNER JOIN assignment.DEPT D2 on D2.DEPTNO=E.DEPTNO
+        WHERE D2.DNAME=D.DNAME AND E.JOB="Clerk") as ClerkCount
+FROM assignment.DEPT D
+ORDER BY ClerkCount DESC

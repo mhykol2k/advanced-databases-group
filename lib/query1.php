@@ -34,7 +34,8 @@
                         FROM assignment.EMP E2
                         WHERE E2.MGR=E.EMPNO) as EMPCOUNT
                 FROM assignment.EMP E
-                WHERE E.MGR=\"7839\"";
+                WHERE E.MGR=\"7839\"
+                ORDER BY EMPCOUNT DESC";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {

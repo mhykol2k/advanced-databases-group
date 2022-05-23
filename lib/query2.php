@@ -21,25 +21,28 @@
           </div>
         <body>
             <div class="content">
-                <h1>Query 2 - All employees working in Sales department with sales > 1000</h1>
+                <h1>Query 2 - Number of Clerks in Each Department</h1>
                 <br>
             <div class="php">
       <?php
 // Connect to db
         require './db_connection.php';
 // Prepping sql query
-        $sql = "SELECT EMP.EMPNO, EMP.ENAME, EMP.SAL, DEPT.DNAME
-        FROM assignment.DEPT INNER JOIN assignment.EMP ON EMP.DEPTNO = DEPT.DEPTNO
-        WHERE EMP.SAL > 1000 AND DEPT.DNAME = \"SALES\" LIMIT 0, 25";
+        $sql = "SELECT D.DNAME,
+                       (SELECT COUNT(E.EMPNO)
+                        FROM assignment.EMP E
+                        INNER JOIN assignment.DEPT D2 on D2.DEPTNO=E.DEPTNO
+                        WHERE D2.DNAME=D.DNAME AND E.JOB=\"Clerk\") as ClerkCount
+                FROM assignment.DEPT D
+                ORDER BY ClerkCount DESC";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
             echo "<table border='2' width='500' cellspacing='0'><tr bgcolor='grey'>
-            <th>Employee number</th><th>Employee Name</th><th>Salary</th><th>Department name</th></tr>";
+            <th>Department Name</th><th>No. Of Clerks</th></tr>";
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                echo "<tr bgcolor='cadetblue'><td>" . $row["EMPNO"]. "</td><td>" . $row["ENAME"]. "</td><td>" 
-                . $row["SAL"]. "</td><td>" . $row["DNAME"]. "</td></tr>";
+                echo "<tr bgcolor='cadetblue'><td>" . $row["DNAME"]. "</td><td>" . $row["ClerkCount"]. "</td></tr>";
             }
             echo "</table>";
         } else {
