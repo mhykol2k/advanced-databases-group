@@ -1,4 +1,4 @@
 /* Query 1 - All employees under certain manager EMPNO */
-SELECT EMP.EMPNO, EMP.ENAME
+SELECT EMP.ENAME
 FROM assignment.EMP
-WHERE MGR = '7839'
+WHERE EMP.NAME IN (SELECT MGR = '7839' FROM assignment.EMP)
