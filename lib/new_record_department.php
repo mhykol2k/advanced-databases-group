@@ -29,35 +29,20 @@
         </div>
         <div class="content">
             <h1>✍️</h1>
-            <h1>Create a new record</h1>
+            <h1>Create a new department record</h1>
         </div>
 <!-- Input Form -->
         <div class="content">
             <form class="form" method="POST">
                 <br>
-                <label class="form" for="EMPNO">Employee Number:</label>
-                <input class="form" type="number" id="EMPNO" name="EMPNO" placeholder="Employee Number" required>
-                <br>
-                <label class="form" for="ENAME">Employee Name:</label>
-                <input class="form" type="text" id="ENAME" name="ENAME" placeholder="Employee Name" required>
-                <br>
-                <label class="form" for="JOB">Job:</label>
-                <input class="form" type="text" id="JOB" name="JOB" placeholder="Job" required>
-                <br>
-                <label class="form" for="MANAGER">Manager:</label>
-                <input class="form" type="text" id="MANAGER" name="MANAGER" placeholder="Manager">
-                <br>
-                <label class="form" for="HIREDATE">Hire Date:</label>
-                <input class="form" type="date" id="HIREDATE" name="HIREDATE" placeholder="dd/MM/yyyy" min="1940-01-01" min="2100-01-01" required>
-                <br>
-                <label class="form" for="SAL">Salary:</label>
-                <input class="form" type="number" id="SAL" name="SAL" placeholder="Salary" required>
-                <br>
-                <label class="form" for="COMM">Comission:</label>
-                <input class="form" type="number" id="COMM" name="COMM" placeholder="Commission">
-                <br>
                 <label class="form" for="DEPTNO">Department Number:</label>
                 <input class="form" type="number" id="DEPTNO" name="DEPTNO" placeholder="Department Number" required>
+                <br>
+                <label class="form" for="DNAME">Department Name:</label>
+                <input class="form" type="text" id="DNAME" name="DNAME" placeholder="Department Name" required>
+                <br>
+                <label class="form" for="LOC">Job:</label>
+                <input class="form" type="text" id="LOC" name="LOC" placeholder="Location" required>
                 <br>
                 <input type="submit" name="submit" value="Create new Record">   
             </form>
@@ -69,18 +54,13 @@
         if(isset($_POST['submit']))
         {    
 // Get form inputs
-            $EMPNO=$_POST['EMPNO'];
-            $ENAME=$_POST['ENAME'];
-            $JOB=$_POST['JOB'];
-            $MANAGER=$_POST['MANAGER']; 
-            $HIREDATE=$_POST['HIREDATE'];
-            $SAL=$_POST['SAL'];
-            $COMM=$_POST['COMM'];
             $DEPTNO=$_POST['DEPTNO'];
+            $DNAME=$_POST['DNAME'];
+            $LOC=$_POST['LOC'];
             
 // Preparing the query
-            $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO)
-            VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
+            $sql = "INSERT INTO assignment.emp(DEPTNO,DNAME,LOC)
+            VALUES ('$DEPTNO','$DNAME','$LOC')";
 
             // checking insert query worked
             if (mysqli_query($conn, $sql)) {
