@@ -9,6 +9,7 @@
     <main>
           <div class="sidenav">
             <a href="index.php">Return to Home</a>
+            <a href="new_record.php">Add New Employee Record</a>
             <a href="new_record_department.php">Add New Department Record</a>
             <a href="query1.php">Query 1</a>
             <a href="query2.php">Query 2</a>

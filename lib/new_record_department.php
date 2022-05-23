@@ -17,7 +17,8 @@
         <body>
         <div class="sidenav">
             <a href="index.php">Return to Home</a>
-            <a href="new_record.php">Add New Record</a>
+            <a href="new_record.php">Add New Employee Record</a>
+            <a href="new_record_department.php">Add New Department Record</a>
             <a href="query1.php">Query 1</a>
             <a href="query2.php">Query 2</a>
             <a href="query3.php">Query 3</a>
@@ -41,7 +42,7 @@
                 <label class="form" for="DNAME">Department Name:</label>
                 <input class="form" type="text" id="DNAME" name="DNAME" placeholder="Department Name" required>
                 <br>
-                <label class="form" for="LOC">Job:</label>
+                <label class="form" for="LOC">Location:</label>
                 <input class="form" type="text" id="LOC" name="LOC" placeholder="Location" required>
                 <br>
                 <input type="submit" name="submit" value="Create new Record">   
