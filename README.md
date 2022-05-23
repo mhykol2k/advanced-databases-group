@@ -23,8 +23,6 @@
 
 <br>
 
-<div align="left">
-
 <details open>
 <summary>Table of Contents</summary>
 <br>
@@ -45,7 +43,6 @@
 - [Appendices](#appendices)
   
 </details>
-</div>
 <br>
 
 <details open>
