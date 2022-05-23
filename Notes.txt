@@ -1,0 +1,7 @@
+Intro                           - Jure
+Database preperation back-end   - Will
+Queries back-end                - Will
+Technique front-end (php)       - Jure
+Demo                            - Michael 
+CSS                             - Michael
+Reflection & Conclusion         - Michael
