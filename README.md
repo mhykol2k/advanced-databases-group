@@ -45,7 +45,7 @@
 - [Appendices](#appendices)
   
 </details>
-
+</div>
 <br>
 
 <details open>
@@ -118,7 +118,7 @@ be available on GitHub and as a PDF.
 
 ### Front-end
 
-<p>
+
 
 show how to in php:
 **edit db & display results**
@@ -273,7 +273,7 @@ The project issues are tracked: [Here](https://github.com/mm1089/advanced-databa
   
 ## Results
 
-<p>After completeing this assignment we were able to find... similarities, differences...
+After completeing this assignment we were able to find... similarities, differences...
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -302,7 +302,7 @@ For NoSQL, it is considered when data is mostly unstructured or semi-structured 
 
 ## Conclusion
 
-<p>In summation, we were able to deduce...<p>
+In summation, we were able to deduce...
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
