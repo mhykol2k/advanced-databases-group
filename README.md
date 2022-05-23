@@ -2,6 +2,7 @@
 
 
 <div align="center" >
+</div>
 
 [![mm1089 - advanced-databases-group](https://img.shields.io/static/v1?label=advanced-databases-group&message=view-source-code&color=42b883&logo=github)](https://github.com/mm1089/advanced-databases-group "View Source Code")
 [![License](https://img.shields.io/badge/License-MIT-42b883)](#license)
@@ -9,7 +10,7 @@
 
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)]((https://github.com/mm1089/advanced-databases-group/blob/main/README.md) "Go to project documentation")
 
-<div>
+
 
 
 <h1 align="center"> Advanced Databases and Big Data </h1>
@@ -23,9 +24,7 @@
 
 <br>
 
-<div align="left">
-
-<details>
+<details open>
 <summary>Table of Contents</summary>
 <br>
   
@@ -45,10 +44,9 @@
 - [Appendices](#appendices)
   
 </details>
-
 <br>
 
-<details>
+<details open>
 <summary>Assignment Information</summary>
 <br>
 
@@ -82,7 +80,7 @@ git clone https://github.com/mm1089/advanced-databases-group.git
 http://localhost/advanced-databases-group/lib/index.php
 ```
 
-<details>
+<details open>
 <summary>Problems with installation?</summary>
 <p>If you cannot install through GitHub or bash CLI, you can  download the repository and drop it into the folder:
 </p>
@@ -95,7 +93,14 @@ C:\xampp\htdocs\
 
 ## Project Architecture
 
+<p>The project architecture is as detailed below. Using GitHub we can track or untrack certain local development dependencies and make a univeral download for anyone.</p>
+
 <img width="120" alt="image" src="https://user-images.githubusercontent.com/72493335/165288032-6c7212a6-21dd-4d0d-987d-fc36367742a2.png">
+
+You can access the implementation locally:
+```sh
+http://localhost/advanced-databases-group/lib/index.php
+```
 
 ## Presentation
 
@@ -111,12 +116,52 @@ be available on GitHub and as a PDF.
 
 ### Front-end
 
-<p>show how to in php:
-connect to db
-edit db
-display results</p>
 
-<p>Something to do with how we created this...</p>
+
+show how to in php:
+**edit db & display results**
+
+This is how we have connected to the database, we created a single file to handle all of the connections. So we can just refer to it within the code.
+```php
+// db_connection.php
+<?php
+    $servername = "localhost";
+    $username = "default_user";
+    $password = "password";
+    $dbname = "assignment";
+// Create the connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+?>
+```
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+To add a new record we must...
+
+```php
+<?php
+// Add New Record
+?>
+```
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+To display the mysql results we must...
+
+```php
+<?php
+// Display Results
+?>
+```
+
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Back-end
 
@@ -199,11 +244,11 @@ Similar to before, ideally this would be implemented alongside a drop down menu 
 |Artifact|Person(s) Responsible|Artifact Status|Notes|Date Completed|
 |---|---|---|---|---|
 |~~_**GitHub Documentation**_~~|Michael McLain|&check; (complete)|_Extra Information_|_**25/04/22**_|
-|~~_**Design Report**_~~|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|~~_**HTML**_~~| Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|~~_**CSS**_~~|Michael McLain, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|_**PHP**_|Michael McLain, William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
-|~~_**MySQL Scripting**_~~|William Castleman, Jure Sunic|&cross; (incomplete)|_Extra Information_|_**---**_|
+|~~_**Design Report**_~~|Michael McLain, William Castleman, Jure Sunic|&check; (complete)|_Extra Information_|_**29/04/22**_|
+|~~_**HTML**_~~| Michael McLain, William Castleman, Jure Sunic|&check; (complete)|_Extra Information_|_**07/05/22**_|
+|~~_**CSS**_~~|Michael McLain, Jure Sunic|&check; (complete)|_Extra Information_|_**18/05/22**_|
+|_~~**PHP**~~_|Michael McLain, William Castleman, Jure Sunic|&check; (complete)|_Extra Information_|_**15/05/22**_|
+|~~_**MySQL Scripting**_~~|William Castleman, Jure Sunic|&check; (complete)|_Extra Information_|_**23/05/22**_|
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -220,41 +265,41 @@ Similar to before, ideally this would be implemented alongside a drop down menu 
 
 GitHub features Issues, which can be defined as a lightweight issue-tracking system available for all GitHub repositories. The ideology is that users will
 consistently use it as your project evolves. In most cases, GitHub Issues is used for reporting bugs and requesting features.
+
 The project issues are tracked: [Here](https://github.com/mm1089/advanced-databases-group/issues)
 <img width="1107" alt="image" src="https://user-images.githubusercontent.com/72493335/165314933-0d09fc61-b3d2-415d-8ac4-e393ffbc3cad.png">
   
 ## Results
 
-<p>After completeing this assignment we were able to find... similarities, differences...
+After completeing this assignment we were able to find... similarities, differences...
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Reflection
 
-<p>What are the limitations of the relational model in handling big data? Do you think the NoSQL models and technologies have succeeded in overcoming those limitations?
+<p>There are limitations with the relational model when handling big data. However, the NoSQL models and technologies have succeeded in overcoming those limitations
 
-There are limitaions of the relational model when handling big data...
-</p>
 
 Designers must consider SQL when your data is highly structured and doesn't change frequently.
 
 For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
+</p>
 
-|Consider SQL if...|Consider NoSQL if...|Conclusion|
-|---|---|---|
+|Consider SQL if...|Consider NoSQL if...|
+|---|---|
 |Data is highly structured and doesn't change frequently|Data is mostly unstructured that doesn't fit the relational model|Something useful|
-|The project is transaction-orientated. E.g., Financial Applications|Flexability of dynamic schemas is required or want more choice over the data model||
-|A high degree of security or integrity is required|The database needs to scale||
-|Routinely execute complex queries|Horizontal scaling, across multiple georaphic locations||
-|Scale-out capabilities are not required|The application does not require the level of integrity offered by SQL databases.||
+|The project is transaction-orientated. E.g., Financial Applications|Flexability of dynamic schemas is required or want more choice over the data model|
+|A high degree of security or integrity is required|The database needs to scale|
+|Routinely execute complex queries|Horizontal scaling, across multiple georaphic locations|
+|Scale-out capabilities are not required|The application does not require the level of integrity offered by SQL databases.|
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Conclusion
 
-<p>In summation, we were able to deduce...<p>
+In summation, we were able to use PHP to create a new record, and view the current records. Addtionally, we managed to run 3 complex queries (Detailed in Appendix).
   
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
