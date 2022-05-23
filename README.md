@@ -99,6 +99,11 @@ C:\xampp\htdocs\
 
 <img width="120" alt="image" src="https://user-images.githubusercontent.com/72493335/165288032-6c7212a6-21dd-4d0d-987d-fc36367742a2.png">
 
+You can access the implementation locally:
+```sh
+http://localhost/advanced-databases-group/lib/index.php
+```
+
 ## Presentation
 
 <p>
