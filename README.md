@@ -132,10 +132,10 @@ This is how we have connected to the database, we created a single file to handl
 ?>
 ```
 
+This section details how we connect the PHP frontend to the mySQL database.
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-To add a new record we must...
 
 ```php
 // Insert PHP code to handle db insertion 
@@ -159,7 +159,7 @@ To add a new record we must...
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-To display the mysql results we must...
+This is how we take the user inputs from the form, and use them to populate the new record of the database. The user entered data is stored and manipulated so that it can be displayed on the PHP frontend whenc called.
 
 ```php
 <?php
@@ -182,6 +182,7 @@ To display the mysql results we must...
         ?>
 ?>
 ```
+How we have inserted the data into the database, and how we are preparing to run queries. This section also contains information on the table style, including width and borders.
 
 ```php
       <?php
@@ -206,6 +207,8 @@ To display the mysql results we must...
         $conn->close();
       ?>
 ```
+
+This codeblock details how we displayed the data from the database on the PHP index. Additionally, this serves as a validatiion check and ensures data is correctly entered, otherwise it will return 0/null results.
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -286,7 +289,7 @@ Similar to before, ideally this would be implemented alongside a drop down menu 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Workflow
+## Workflows
 
 |Artifact|Person(s) Responsible|Artifact Status|Notes|Date Completed|
 |---|---|---|---|---|
@@ -313,33 +316,24 @@ Similar to before, ideally this would be implemented alongside a drop down menu 
 GitHub features Issues, which can be defined as a lightweight issue-tracking system available for all GitHub repositories. The ideology is that users will
 consistently use it as your project evolves. In most cases, GitHub Issues is used for reporting bugs and requesting features.
 
-The project issues are tracked: [Here](https://github.com/mm1089/advanced-databases-group/issues)
+The project issues are tracked: [Here](https://github.com/mhykol2k/advanced-databases-group/issues)
 <img width="1107" alt="image" src="https://user-images.githubusercontent.com/72493335/165314933-0d09fc61-b3d2-415d-8ac4-e393ffbc3cad.png">
-  
-## Results
 
-After completeing this assignment we were able to find... similarities, differences...
-  
-<!-- back to top -->
-<p align="right">(<a href="#top">back to top</a>)</p>
+<br>
 
-## Reflection
+## Reflection and Results
+<br>
 
-<p>There are limitations with the relational model when handling big data. However, the NoSQL models and technologies have succeeded in overcoming those limitations. 
-For NoSQL, it is considered when data is mostly unstructured or semi-structured data that doesnt't fit the relational model
+<p>There are limitations with the relational model when handling big data. However, the NoSQL models and technologies have succeeded in overcoming those limitations. NoSQL is considered when data is mostly unstructured or is semi-structured data that doesnt't fit the traditional relational model. Also, designers must consider SQL when their data is highly structured and doesn't frequently change.
 
-Relational databases are a kind of management system in which tables are used to store all forms of data.
-It is the standard way for software developers to store complex data and once the data is stored inside the table it can be retrieved at any time. 
-Designers must consider SQL when your data is highly structured and doesn't change frequently.
+Relational databases are a kind of management system in which tables are used to store all forms of data. It is the standard way for software developers to store complex data and once the data is stored inside the table it can be retrieved at any time. The cost involved in a traditional releational database can be significant. Because often multiple types of software need to be purchased, and a professional technician is usually required to maintain the system lifecycle.
 
-The cost involved in a releational database can be significant. Often multiple types of software that needs to be purchased. 
-Moreover, a professional technician is usually required to maintain the system.
+Addtionally, relational databases have poor performance, although its speed is still considerably high in comparison to other methods due to the ease and simplicity.
 
-Addtionally, relational databases have poor performance, although its speed is still considerably high due to the ease and simplicity.
-
-Finally, compared to other types of models, relational database models are simple, and avoids complex structuring.
-As a result, relational databases do not require complex queries. 
+Finally, compared to other data models, relational models are simple and avoid complex structuring. Due to this, relational databases do not require complex queries for execution.
 </p>
+
+<br>
 
 |Consider SQL if...|Consider NoSQL if...|
 |---|---|
