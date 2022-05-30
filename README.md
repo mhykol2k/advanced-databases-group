@@ -4,11 +4,11 @@
 <div align="center" >
 </div>
 
-[![mm1089 - advanced-databases-group](https://img.shields.io/static/v1?label=advanced-databases-group&message=view-source-code&color=42b883&logo=github)](https://github.com/mm1089/advanced-databases-group "View Source Code")
+[![mm1089 - advanced-databases-group](https://img.shields.io/static/v1?label=advanced-databases-group&message=view-source-code&color=42b883&logo=github)](https://github.com/mhykol2k/advanced-databases-group "View Source Code")
 [![License](https://img.shields.io/badge/License-MIT-42b883)](#license)
-[![stars - advanced-databases-group](https://img.shields.io/github/stars/mm1089/advanced-databases-group?style=social)](https://github.com/mm1089/advanced-databases-group)
+[![stars - advanced-databases-group](https://img.shields.io/github/stars/mm1089/advanced-databases-group?style=social)](https://github.com/mhykol2k/advanced-databases-group)
 
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)]((https://github.com/mm1089/advanced-databases-group/blob/main/README.md) "Go to project documentation")
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)]((https://github.com/mhykol2k/advanced-databases-group/blob/main/README.md) "Go to project documentation")
 
 
 
@@ -50,9 +50,7 @@
 <summary>Assignment Information</summary>
 <br>
 
-<a>Assignment Brief Download:</a> [Here](https://rb.gy/u1qb6f)
-
-<a>GitHub Project Link: [Here](https://github.com/mm1089/advanced-databases-group)</a>
+<a>GitHub Project Link: [Here](https://github.com/mhykol2k/advanced-databases-group)</a>
 
 <a>Presentation Download:</a> [Here](https://youtube.com/)
 </details>
@@ -91,16 +89,17 @@ C:\xampp\htdocs\
 
 </details>
 
+You can access the implementation locally:
+```sh
+http://localhost/advanced-databases-group/lib/index.php
+```
+
 ## Project Architecture
 
 <p>The project architecture is as detailed below. Using GitHub we can track or untrack certain local development dependencies and make a univeral download for anyone.</p>
 
 <img width="120" alt="image" src="https://user-images.githubusercontent.com/72493335/165288032-6c7212a6-21dd-4d0d-987d-fc36367742a2.png">
 
-You can access the implementation locally:
-```sh
-http://localhost/advanced-databases-group/lib/index.php
-```
 
 ## Presentation
 
@@ -115,11 +114,6 @@ be available on GitHub and as a PDF.
 ## Implementation
 
 ### Front-end
-
-
-
-show how to in php:
-**edit db & display results**
 
 This is how we have connected to the database, we created a single file to handle all of the connections. So we can just refer to it within the code.
 ```php
@@ -144,8 +138,21 @@ This is how we have connected to the database, we created a single file to handl
 To add a new record we must...
 
 ```php
-<?php
-// Add New Record
+// Insert PHP code to handle db insertion 
+        <?php
+        require './db_connection.php';        
+// Check form is submitted
+        if(isset($_POST['submit']))
+        {    
+// Get form inputs
+            $EMPNO=$_POST['EMPNO'];
+            $ENAME=$_POST['ENAME'];
+            $JOB=$_POST['JOB'];
+            $MANAGER=$_POST['MANAGER']; 
+            $HIREDATE=$_POST['HIREDATE'];
+            $SAL=$_POST['SAL'];
+            $COMM=$_POST['COMM'];
+            $DEPTNO=$_POST['DEPTNO'];
 ?>
 ```
 
@@ -156,8 +163,48 @@ To display the mysql results we must...
 
 ```php
 <?php
-// Display Results
+// // Preparing the query
+            $sql = "INSERT INTO assignment.emp(EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO)
+            VALUES ('$EMPNO','$ENAME','$JOB','$MANAGER','$HIREDATE','$SAL','$COMM','$DEPTNO')";
+
+            // checking insert query worked
+            if (mysqli_query($conn, $sql)) {
+                echo "Your new record has been created successfully!";
+            } else {
+                $error="Error: " . $sql . ":-" . mysqli_error($conn);
+                echo "$error";
+            }
+// Close db connection
+            mysqli_close($conn);
+// Call alert and redirect
+            echo '<script type="text/javascript">addRecord();</script>';
+        }
+        ?>
 ?>
+```
+
+```php
+      <?php
+// Connect to db
+        require './db_connection.php';
+// Prepping sql query
+        $sql = "SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO FROM EMP";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            echo "<table border='2' width='1000' cellspacing='0'><tr bgcolor='grey'><th>EMPNO</th><th>Name</th><th>Job</th><th>Mgr</th><th>Hire Date</th><th>Salary</th><th>Commision</th><th>Department number</th></tr>";
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "<tr bgcolor='cadetblue'><td>" . $row["EMPNO"]. "</td><td>" . $row["ENAME"]. "</td><td>" . $row["JOB"]. 
+                "</td><td>" . $row["MGR"]. "</td><td>" . $row["HIREDATE"]. "</td><td>" . $row["SAL"]. "</td><td>" 
+                . $row["COMM"]. "</td><td>" . $row["DEPTNO"]. "</td></tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "0 results";
+        }
+        $conn->close();
+      ?>
 ```
 
 <!-- back to top -->
