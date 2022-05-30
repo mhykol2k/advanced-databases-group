@@ -335,6 +335,14 @@ Finally, compared to other data models, relational models are simple and avoid c
 
 <br>
 
+<!-- back to top -->
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Conclusion
+
+In summation, we were able to use PHP to create a new record, and view the current records. Addtionally, we managed to run 3 complex queries (Detailed in Appendix).
+
+
 |Consider SQL if...|Consider NoSQL if...|
 |---|---|
 |Data is highly structured and doesn't change frequently|Data is mostly unstructured that doesn't fit the relational model|Something useful|
@@ -346,12 +354,7 @@ Finally, compared to other data models, relational models are simple and avoid c
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Conclusion
 
-In summation, we were able to use PHP to create a new record, and view the current records. Addtionally, we managed to run 3 complex queries (Detailed in Appendix).
-  
-<!-- back to top -->
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Rubric
 
