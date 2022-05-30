@@ -115,6 +115,8 @@ be available on GitHub and as a PDF.
 
 ### Front-end
 
+#### PHP DB Connection
+
 This is how we have connected to the database, we created a single file to handle all of the connections. So we can just refer to it within the code.
 ```php
 // db_connection.php
@@ -132,10 +134,16 @@ This is how we have connected to the database, we created a single file to handl
 ?>
 ```
 
-This section details how we connect the PHP frontend to the mySQL database.
+This section details how we connect the PHP frontend to the mySQL database. IF this project was to be deployed online (spoke about briefly in project demo) you would need to configure these variables to match the deployed solutions.
+- $servername - being the ip address of the deployed database
+- $username - being the username of the user account needed online
+- $password - password to the user account
+- $dbname - the database schema name
+
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+#### PHP DB Form Insert
 
 ```php
 // Insert PHP code to handle db insertion 
@@ -155,11 +163,12 @@ This section details how we connect the PHP frontend to the mySQL database.
             $DEPTNO=$_POST['DEPTNO'];
 ?>
 ```
+This code essentially just checks if the php form has been submitted, if it has it populates the variables associated with each field on the database's EMP table and posts it the the database. All form validation is handled by the php page previously on submit meaning no false/invalid data can be added.
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-This is how we take the user inputs from the form, and use them to populate the new record of the database. The user entered data is stored and manipulated so that it can be displayed on the PHP frontend whenc called.
+This is how we take the user inputs from the form, and use them to populate the new record of the database. The user entered data is stored and manipulated so that it can be displayed on the PHP frontend when called.
 
 ```php
 <?php
@@ -182,7 +191,12 @@ This is how we take the user inputs from the form, and use them to populate the 
         ?>
 ?>
 ```
-How we have inserted the data into the database, and how we are preparing to run queries. This section also contains information on the table style, including width and borders.
+
+This works by just checking if the query has been successfully inserted to the database, if not it returns the error message on the webpage. If it works it returns a new record has been inserted successfully on a pagfe alert. The database connection is then closed and the page returns to the homepage.
+
+#### PHP DB Table
+
+How we have functionality for inserting the data into the database, and how we are preparing to run queries. This section also contains information on the table style, including width and borders.
 
 ```php
       <?php
@@ -208,20 +222,26 @@ How we have inserted the data into the database, and how we are preparing to run
       ?>
 ```
 
-This codeblock details how we displayed the data from the database on the PHP index. Additionally, this serves as a validatiion check and ensures data is correctly entered, otherwise it will return 0/null results.
+This codeblock details how we displayed the data from the database on the PHP index. IT essentially just reads the data retrieved from the result of the SQL query and creates a table from it. Additionally, this serves as a validatiion check and ensures data is correctly entered, otherwise it will return 0/null results.
 
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Back-end
 
-<p>To implement the back end we wrote a script to create and populate the existing database given to us; and create new users to manage/query it. This was done inside one big script (DB_Config_Script.sql) so that when users go to deploy the database all they have to do is copy paste the SQL queries and run them. The code to create and populate the tables can be found in the appendix at the bottom of the report.
+#### DB Config
+
+<p>To implement the back end we wrote a script to create and populate the existing database given to us; and create new users to manage/query it. This was done inside one big script (DB_Config_Script.sql) so that when users go to deploy the database all they have to do import the SQL script and run it. The code to create and populate the tables can be found in the appendix at the bottom of the report.
 </p>
+
+#### DB Permissions
 
 <p>Next we had to take into consideration the permissions needed by the users of the system and how many different users there would be. According to the brief, users simply need to be able to insert new employees/departments and edit existing ones. Therefore we created only two users: admin and default_user (see Figure 3.0). Due to there being no mention of deleting tables these permissions were not included for the general user(see Figure 4.0).
 </p>
 
-<p>Finally, users would need to be able to run and view the results of any 3 SQL queries. The brief does not mention any particular queries therefore we just went ahead and created the queries seen in the below appendix(see all of Figure 5).
+#### DB SQL Scripts
+
+<p>Finally, users would need to be able to run and view the results of any 3 SQL queries. The brief does not mention any particular queries therefore we just went ahead and created the queries seen in the below appendix(see all of Figure 5). Similar to the DB_Config_Script these, onec the DB has been created, can simply be imported and run through the PHPmyAdmin page.
 </p>
 
 <!-- back to top -->
