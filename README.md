@@ -227,62 +227,75 @@ This codeblock details how we displayed the data from the database on the PHP in
 <!-- back to top -->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<p>The first SQL query we wrote for the users to have ready to run is a query to display all employees under a certain manager employee number (displayed below).</p>
-
 <details open>
 <summary>Query 1</summary>
 <br>
 
-```sql
-/* Query 1 - All employees under certain manager EMPNO */
-SELECT EMP.EMPNO, EMP.ENAME
-FROM assignment.EMP
-WHERE MGR = '7839'
-```
-This query works by first using 'SELECT' to select the EMPNO and ENAME fields from theh EMP table so the employees number and name is displayed in the search results. Next, we use the 'FROM' SQL command to specify the database and tables we want to query from; this being the EMP table. Finally, we use the 'WHERE' SQL command to specify the MGR fields value which is used to specify the employees managers employee number.
+<p>The first SQL query we wrote for the users to have ready to run is a query to count all employees under a certain manager (displayed below).</p>
 
-Ideally this query will be implemented alongside some kind of drop down menu that specifies all the managers names along with employee number. This could then be used by the business to quickly see what managers are under-staffed and which are taking on responsibility for too much staff; either when employing new staff or generally.
+```sql
+/* Query 1 - Returns the number of employees each manager is responsible for */
+SELECT E.EMPNO,
+       E.ENAME,
+       (SELECT COUNT(E2.EMPNO)
+        FROM assignment.EMP E2
+        WHERE E2.MGR=E.EMPNO) as EMPCOUNT
+FROM assignment.EMP E
+WHERE E.MGR="7839"
+ORDER BY EMPCOUNT DESC
+```
+This query works by first using 'SELECT' to select the EMPNO and ENAME fields from the EMP table so the employees number and name is displayed in the search results. Next, we used a nested select statement within the select statement to run a query to count all the employees that work under the president and returned it as EMPCOUNT, aka the managers. Then, the 'FROM' SQL command to specify the database and tables we want to query from; this being the EMP table in both queries. Finally, we use the 'WHERE' SQL command to specify the MGR fields value which is used to specify the employees managers employee number this being the main presidents EMPNO as this will return us all managers along with their count of employees. Finally, we added an ORDER BY statement to filter the list by descending with the manager with the most responsibility at the top.
+
+Ideally this query will be implemented alongside some kind of drop down menu that specifies all the managers names along with employee number, however in our solution due to the size of the database we decided against this. This query can be used by the business to quickly see what managers are under-staffed and which are taking on responsibility for too much staff; either when employing new staff or generally, a useful business use case.
 
 </details>
 <br>
-
-<p>The second SQL query we wrote for the users to have ready to run displays all employees in the sales department sales figures.</p>
 
 <details open>
 <summary>Query 2</summary>
 <br>
 
+<p>The second SQL query we wrote for the users to have ready to run displays all clerks in each  department.</p>
+
 ```sql
-/* Query 2 - All employees working in Sales department with sales > 1000 */
-SELECT EMP.EMPNO, EMP.ENAME, EMP.SAL, DEPT.DNAME
-FROM assignment.EMP, assignment.DEPT
-INNER JOIN EMP on EMP.DEPTNO=DEPT.DEPTNO
-WHERE EMP.SAL > 1000
-AND DEPT.DNAME="SALES"
+/* Query 2 - Number of Clerks in each department */
+SELECT D.DNAME,
+       (SELECT COUNT(E.EMPNO)
+        FROM assignment.EMP E
+        INNER JOIN assignment.DEPT D2 on D2.DEPTNO=E.DEPTNO
+        WHERE D2.DNAME=D.DNAME AND E.JOB="Clerk") as ClerkCount
+FROM assignment.DEPT D
+ORDER BY ClerkCount DESC
 ```
 
-This query works by first using the SQL 'SELECT' statement to select: employee number, employee name, employee sales figures, and department name fields to be displayed in the results. Next, we specify we want to query data from both tables as seen above on line 2 of the query. Now, due to the fact we need to find employees from only the SALES department we need to join the tables records to be able to query using the department name of 'SALES'. To do that we have used an SQL 'INNER JOIN' statement to connect the DEPTNO from the EMP table to the DEPTNO from the DEPT table. This could of also been done by manually finding the SALES departments DEPTNO and including it as a parameter in the WHERE statement although this would take a lot longer if there were hundreds/thousands of departments. Next, we needed to find only employees with SALES of more than 1000. To do this we simply specified it in the WHERE section of the query using the SAL field and the more than operator ('>'). Finally, we need to specify the department name so that only employees from the SALES department show up in the results.
+This query works by first using the SQL 'SELECT' statement to select: department name and then a nested select statement which is responsible for returning the clerk count. To do this we used the COUNT function to count the amount of unique EMPNO's returned from the nested SQL query. Next, we needed to join the department and employee tables to be able to query what we needed; the department name and the employee job. To do this we needed to create another instance of the department table and join it to the emp table we created to search for employees with the job of 'CLERK'. Next, we needed to specify the paramaters of the search to count the results from; to do this we specified the name of the department in the nested query is the same as the one in the parent query and then specified the job to be 'CLERK'. This nested query will now essentially loop through each department, and count all the employees with the job of clerk in its job description. Again finally, we used ORDER BY to return these results as descending.
+
+The reason we chose to do this query is as the 'CLERK' was the only cross departmental job role which we could query and collect the count for each department. This is a useful query to the business as it will quickly display which offices/locations have too much/little clerks quick and easily.
 
 </details>
 <br>
-
-<p>Finally, the third SQL query we wrote for the users to have ready to run displays all employees working in a certain city/location</p>
 
 <details open>
 <summary>Query 3</summary>
 <br>
 
+<p>Finally, the third SQL query we wrote for the users to have ready to run displays the count of employees working in a certain city/location</p>
+
 ```sql
-/* Query 3 - All employees working in certain city/LOC */
-SELECT EMP.EMPNO, EMP.ENAME, DEPT.LOC
-FROM assignment.EMP, assignment.DEPT
-INNER JOIN EMP on EMP.DEPTNO=DEPT.DEPTNO
-WHERE DEPT.LOC="CHICAGO"
+/* Query 3 - Number of employees working in each city/LOC */
+SELECT D.LOC,
+       (SELECT Count(E.EMPNO)
+        FROM assignment.EMP E
+        INNER JOIN assignment.DEPT D2 on D2.DEPTNO=E.DEPTNO
+        WHERE D2.LOC=D.LOC) as EmployeeCount
+FROM assignment.DEPT D
+ORDER BY EmployeeCount DESC
 ```
 
-Firstly, we used the SQL 'SELECT' statement to select the employee number, name, and location to be displayed in the results. Next, we used 'FROM' statement to select the database and tables required; these being the employee and department table. Now, we used an 'INNER JOIN' to join the records where the DEPTNO is equal in both tables to allow us to query by the location (DEPT.LOC). Finally, as mentioned previously we need to specify the location we want the employees from this is where the sql statement 'WHERE' is used.
+Firstly, we needed to use the SELECT statement to select the fields we wanted to return in the results these being; department location, and then the nested select statement to return the count of employees. This is returned as EmployeeCount. Then we used the FROM statement to specify we wanted the department names from the department table in the parent query. The nested select statement works similar to previous in the way it takes the department name from the parent query to run and count the employees for by joining the tables. Again here, using ORDER BY DESC to order the count of employees in each department by descending.
 
-Similar to before, ideally this would be implemented alongside a drop down menu to select the location the user would like the results from.
+Similar to before, ideally this would be implemented alongside a drop down menu to select the location the user would like the results from. However, for the scale of this project/business we decided to simply run this as an all in one query. If there becomes multiple offices/locations it may be better to implement it this way for user ease.
+
 </details>
 <br>
 
