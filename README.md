@@ -63,6 +63,9 @@
 <p>To run this implementation you will need to ensure that you have the following prerequisites installed:</p>
 
 1. XAMMP
+    - MySQL
+    - Apache Web Server
+    - PHPMyAdmin
 2. Web-Browser (Chrome, Edge or Firefox)
 
 ```bash
@@ -72,7 +75,7 @@ cd C:\xampp\htdocs\
 # Clone the group repository into htdocs.
 git clone https://github.com/mm1089/advanced-databases-group.git
 
-# Start Apache and MySQL server on the XAMPP Application.
+# Start Apache and MySQL server on the XAMPP Application as seen on video demo.
 
 # You can now access the project locally:
 http://localhost/advanced-databases-group/lib/index.php
@@ -100,6 +103,10 @@ http://localhost/advanced-databases-group/lib/index.php
 
 <img width="120" alt="image" src="https://user-images.githubusercontent.com/72493335/165288032-6c7212a6-21dd-4d0d-987d-fc36367742a2.png">
 
+- assets - CSS and JS files used within the solution
+- lib - Holds php pages/code used within the project
+- media - Contains any images used within the webpage, i.e. company logo
+- scripts - Home to the sql scripts created
 
 ## Presentation
 
@@ -337,7 +344,7 @@ Similar to before, ideally this would be implemented alongside a drop down menu 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Preparation
-<p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code.
+<p>For the creation of the front-end we are using PHP to send HTML (and CSS and JavaScript) to the browser, it really works well in computation on the server (and accessing a database, not on the user's computer). Not using PHP to focus on the client-side is just as bad as using it to generate only client-side code. To prepare and setup the project on your own pc please see the video demo provided.
 
 </p>
 
@@ -361,9 +368,9 @@ The project issues are tracked: [Here](https://github.com/mhykol2k/advanced-data
 
 Relational databases are a kind of management system in which tables are used to store all forms of data. It is the standard way for software developers to store complex data and once the data is stored inside the table it can be retrieved at any time. The cost involved in a traditional releational database can be significant. Because often multiple types of software need to be purchased, and a professional technician is usually required to maintain the system lifecycle.
 
-Addtionally, relational databases have poor performance, although its speed is still considerably high in comparison to other methods due to the ease and simplicity.
+Addtionally, relational databases have poor performance compared with NoSQL models, although its speed is still considerably high in comparison to other methods. 
 
-Finally, compared to other data models, relational models are simple and avoid complex structuring. Due to this, relational databases do not require complex queries for execution.
+Compared to other data models, relational models are simple and avoid complex structuring. Due to this, relational databases do not require complex queries for execution. Finally, With a project like this with heavliy structured tables which will more than likely not be changed much for a company of this size, the relational model is more than adequate.
 </p>
 
 <br>
@@ -373,7 +380,7 @@ Finally, compared to other data models, relational models are simple and avoid c
 
 ## Conclusion
 
-In summation, we were able to use PHP to create a new record, and view the current records. Addtionally, we managed to run 3 complex queries (Detailed in Appendix).
+In summation, we were able to use PHP to create a new record, and view the current records. Addtionally, we managed to run 3 complex queries (Detailed in Appendix) all served from a php page connected with a MySQL database.
 
 
 |Consider SQL if...|Consider NoSQL if...|
